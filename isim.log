@@ -1,0 +1,54 @@
+ISim log file
+Running: D:\Xilinx Projects\test_display\test_display\count_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Xilinx Projects/test_display/test_display/count_tb_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 32140800s
+Incorrect usage of command 'run'
+Usage: run [ all | continue | <<time> [<unit>]> ]
+for detailed help use 'help run'
+# run for 32140800s
+Incorrect usage of command 'run'
+Usage: run [ all | continue | <<time> [<unit>]> ]
+for detailed help use 'help run'
+# help run
+Usage: run [ all | continue | <<time> [<unit>]> ]
+    Runs the simulation for the specified time.
+    run
+        Runs the simulation for 100 units of the current time unit.
+        The default time unit is the same as the engine precision
+        (resolution limit) and may be changed with the command
+        'isim set userunit'.
+    run <all | continue>
+        Runs the simulation until there are no more events.
+    run <time> [<unit>]
+        Runs the simulation for the specified time.
+        If unit is omitted, the current time unit is used.
+        The default time unit is the same as the engine precision
+        (resolution limit) and may be changed with the command
+        'isim set userunit'.
+        Possible values for unit are: fs, ps, ns, us, ms, s.
+Type "help run <subcommand>" for help on run subcommands.
+Valid subcommands are: continue, all
+# run 10s
+# run 8000000
+# run 8000000s
+Incorrect usage of command 'run'
+Usage: run [ all | continue | <<time> [<unit>]> ]
+for detailed help use 'help run'
+# run 800000a
+Incorrect usage of command 'run'
+Usage: run [ all | continue | <<time> [<unit>]> ]
+for detailed help use 'help run'
+# run 80000a
+Incorrect usage of command 'run'
+Usage: run [ all | continue | <<time> [<unit>]> ]
+for detailed help use 'help run'
+# run 800s
+Stopped at time : 10349450445 ns : File "D:/Xilinx Projects/test_display/test_display/count_tb.vhd" Line 88

@@ -1,0 +1,986 @@
+MDF Database:  version 1.0
+MDF_INFO | display_driver | XC2C256-6-TQ144
+MACROCELL | 2 | 0 | anode<0>_MC
+ATTRIBUTES | 2323907330 | 0
+OUTPUTMC | 1 | 2 | 4
+INPUTS | 1 | anode<1>
+INPUTMC | 1 | 2 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   anode<0> := anode<1>;	// (1 pt, 1 inp)
+    anode<0>.CLK = clk_1kHz;	// CTC	(1 pt, 1 inp)
+   anode<0>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 1 | anode<1>_MC
+ATTRIBUTES | 2307130114 | 0
+OUTPUTMC | 1 | 2 | 0
+INPUTS | 1 | anode<2>
+INPUTMC | 1 | 2 | 2
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   anode<1> := anode<2>;	// (1 pt, 1 inp)
+    anode<1>.CLK = clk_1kHz;	// CTC	(1 pt, 1 inp)
+   anode<1>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 1 | reset
+
+MACROCELL | 2 | 2 | anode<2>_MC
+ATTRIBUTES | 2307130114 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 1 | anode<3>
+INPUTMC | 1 | 2 | 4
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   anode<2> := anode<3>;	// (1 pt, 1 inp)
+    anode<2>.CLK = clk_1kHz;	// CTC	(1 pt, 1 inp)
+   anode<2>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 1 | reset
+
+MACROCELL | 2 | 4 | anode<3>_MC
+ATTRIBUTES | 2307130114 | 0
+OUTPUTMC | 1 | 2 | 2
+INPUTS | 1 | anode<0>
+INPUTMC | 1 | 2 | 0
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   anode<3> := anode<0>;	// (1 pt, 1 inp)
+    anode<3>.CLK = clk_1kHz;	// CTC	(1 pt, 1 inp)
+   anode<3>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 1 | reset
+
+MACROCELL | 0 | 4 | clk_1kHz_MC
+ATTRIBUTES | 2168488704 | 0
+INPUTS | 12 | frequency_div/a1<0>  | frequency_div/a1<10>  | frequency_div/a1<1>  | frequency_div/a1<2>  | frequency_div/a1<3>  | frequency_div/a1<4>  | frequency_div/a1<5>  | frequency_div/a1<6>  | frequency_div/a1<7>  | frequency_div/a1<8>  | frequency_div/a1<9>  | frequency_div/a1<11>
+INPUTMC | 12 | 0 | 15 | 0 | 1 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 13 | 0 | 6 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 0
+EQ | 7 | 
+   clk_1kHz.T := frequency_div/a1<0> & !frequency_div/a1<10> & 
+	!frequency_div/a1<1> & !frequency_div/a1<2> & !frequency_div/a1<3> & 
+	!frequency_div/a1<4> & !frequency_div/a1<5> & !frequency_div/a1<6> & 
+	!frequency_div/a1<7> & !frequency_div/a1<8> & !frequency_div/a1<9> & 
+	!frequency_div/a1<11>;	// (1 pt, 12 inp)
+   clk_1kHz.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   clk_1kHz.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 0 | 15 | frequency_div/a1<0>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 12 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 0
+EQ | 3 | 
+   !frequency_div/a1<0>.T := Gnd;	// (0 pt, 0 inp)
+   frequency_div/a1<0>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<0>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 1 | frequency_div/a1<10>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 7 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 12 | frequency_div/a1<0>  | frequency_div/a1<1>  | frequency_div/a1<2>  | frequency_div/a1<3>  | frequency_div/a1<4>  | frequency_div/a1<5>  | frequency_div/a1<6>  | frequency_div/a1<7>  | frequency_div/a1<8>  | frequency_div/a1<9>  | frequency_div/a1<10>  | frequency_div/a1<11>
+INPUTMC | 12 | 0 | 15 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 13 | 0 | 6 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 1 | 0 | 0
+EQ | 10 | 
+   frequency_div/a1<10>.T := !frequency_div/a1<0> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5> & !frequency_div/a1<6> & !frequency_div/a1<7> & 
+	!frequency_div/a1<8> & !frequency_div/a1<9>
+	# !frequency_div/a1<10> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5> & !frequency_div/a1<6> & !frequency_div/a1<7> & 
+	!frequency_div/a1<8> & !frequency_div/a1<9> & !frequency_div/a1<11>;	// (2 pt, 12 inp)
+   frequency_div/a1<10>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<10>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 0 | 10 | frequency_div/a1<1>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 11 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 1 | frequency_div/a1<0>
+INPUTMC | 1 | 0 | 15
+EQ | 3 | 
+   frequency_div/a1<1>.T := !frequency_div/a1<0>;	// (1 pt, 1 inp)
+   frequency_div/a1<1>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<1>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 9 | frequency_div/a1<2>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 10 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 2 | frequency_div/a1<0>  | frequency_div/a1<1>
+INPUTMC | 2 | 0 | 15 | 0 | 10
+EQ | 3 | 
+   frequency_div/a1<2>.T := !frequency_div/a1<0> & !frequency_div/a1<1>;	// (1 pt, 2 inp)
+   frequency_div/a1<2>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<2>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 8 | frequency_div/a1<3>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 9 | 0 | 7 | 0 | 6 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 3 | frequency_div/a1<0>  | frequency_div/a1<1>  | frequency_div/a1<2>
+INPUTMC | 3 | 0 | 15 | 0 | 10 | 0 | 9
+EQ | 4 | 
+   frequency_div/a1<3>.T := !frequency_div/a1<0> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2>;	// (1 pt, 3 inp)
+   frequency_div/a1<3>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<3>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 7 | frequency_div/a1<4>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 8 | 0 | 6 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 4 | frequency_div/a1<0>  | frequency_div/a1<1>  | frequency_div/a1<2>  | frequency_div/a1<3>
+INPUTMC | 4 | 0 | 15 | 0 | 10 | 0 | 9 | 0 | 8
+EQ | 4 | 
+   frequency_div/a1<4>.T := !frequency_div/a1<0> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3>;	// (1 pt, 4 inp)
+   frequency_div/a1<4>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<4>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 13 | frequency_div/a1<5>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 8 | 0 | 6 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 12 | frequency_div/a1<0>  | frequency_div/a1<1>  | frequency_div/a1<2>  | frequency_div/a1<3>  | frequency_div/a1<4>  | frequency_div/a1<10>  | frequency_div/a1<5>  | frequency_div/a1<6>  | frequency_div/a1<7>  | frequency_div/a1<8>  | frequency_div/a1<9>  | frequency_div/a1<11>
+INPUTMC | 12 | 0 | 15 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 1 | 0 | 13 | 0 | 6 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 0
+EQ | 8 | 
+   frequency_div/a1<5>.T := !frequency_div/a1<0> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4>
+	# !frequency_div/a1<10> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5> & !frequency_div/a1<6> & !frequency_div/a1<7> & 
+	!frequency_div/a1<8> & !frequency_div/a1<9> & !frequency_div/a1<11>;	// (2 pt, 12 inp)
+   frequency_div/a1<5>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<5>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 0 | 6 | frequency_div/a1<6>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 7 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 6 | frequency_div/a1<0>  | frequency_div/a1<1>  | frequency_div/a1<2>  | frequency_div/a1<3>  | frequency_div/a1<4>  | frequency_div/a1<5>
+INPUTMC | 6 | 0 | 15 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 13
+EQ | 5 | 
+   frequency_div/a1<6>.T := !frequency_div/a1<0> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5>;	// (1 pt, 6 inp)
+   frequency_div/a1<6>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<6>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 12 | frequency_div/a1<7>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 7 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 12 | frequency_div/a1<0>  | frequency_div/a1<1>  | frequency_div/a1<2>  | frequency_div/a1<3>  | frequency_div/a1<4>  | frequency_div/a1<5>  | frequency_div/a1<6>  | frequency_div/a1<10>  | frequency_div/a1<7>  | frequency_div/a1<8>  | frequency_div/a1<9>  | frequency_div/a1<11>
+INPUTMC | 12 | 0 | 15 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 13 | 0 | 6 | 0 | 1 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 0
+EQ | 9 | 
+   frequency_div/a1<7>.T := !frequency_div/a1<0> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5> & !frequency_div/a1<6>
+	# !frequency_div/a1<10> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5> & !frequency_div/a1<6> & !frequency_div/a1<7> & 
+	!frequency_div/a1<8> & !frequency_div/a1<9> & !frequency_div/a1<11>;	// (2 pt, 12 inp)
+   frequency_div/a1<7>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<7>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 0 | 11 | frequency_div/a1<8>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 7 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 12 | frequency_div/a1<0>  | frequency_div/a1<1>  | frequency_div/a1<2>  | frequency_div/a1<3>  | frequency_div/a1<4>  | frequency_div/a1<5>  | frequency_div/a1<6>  | frequency_div/a1<7>  | frequency_div/a1<10>  | frequency_div/a1<8>  | frequency_div/a1<9>  | frequency_div/a1<11>
+INPUTMC | 12 | 0 | 15 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 13 | 0 | 6 | 0 | 12 | 0 | 1 | 0 | 11 | 0 | 5 | 0 | 0
+EQ | 9 | 
+   frequency_div/a1<8>.T := !frequency_div/a1<0> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5> & !frequency_div/a1<6> & !frequency_div/a1<7>
+	# !frequency_div/a1<10> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5> & !frequency_div/a1<6> & !frequency_div/a1<7> & 
+	!frequency_div/a1<8> & !frequency_div/a1<9> & !frequency_div/a1<11>;	// (2 pt, 12 inp)
+   frequency_div/a1<8>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<8>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 0 | 5 | frequency_div/a1<9>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 7 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 12 | frequency_div/a1<0>  | frequency_div/a1<1>  | frequency_div/a1<2>  | frequency_div/a1<3>  | frequency_div/a1<4>  | frequency_div/a1<5>  | frequency_div/a1<6>  | frequency_div/a1<7>  | frequency_div/a1<8>  | frequency_div/a1<10>  | frequency_div/a1<9>  | frequency_div/a1<11>
+INPUTMC | 12 | 0 | 15 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 13 | 0 | 6 | 0 | 12 | 0 | 11 | 0 | 1 | 0 | 5 | 0 | 0
+EQ | 10 | 
+   frequency_div/a1<9>.T := !frequency_div/a1<0> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5> & !frequency_div/a1<6> & !frequency_div/a1<7> & 
+	!frequency_div/a1<8>
+	# !frequency_div/a1<10> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5> & !frequency_div/a1<6> & !frequency_div/a1<7> & 
+	!frequency_div/a1<8> & !frequency_div/a1<9> & !frequency_div/a1<11>;	// (2 pt, 12 inp)
+   frequency_div/a1<9>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<9>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 0 | 0 | frequency_div/a1<11>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 7 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4
+INPUTS | 12 | frequency_div/a1<0>  | frequency_div/a1<10>  | frequency_div/a1<1>  | frequency_div/a1<2>  | frequency_div/a1<3>  | frequency_div/a1<4>  | frequency_div/a1<5>  | frequency_div/a1<6>  | frequency_div/a1<7>  | frequency_div/a1<8>  | frequency_div/a1<9>  | frequency_div/a1<11>
+INPUTMC | 12 | 0 | 15 | 0 | 1 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 13 | 0 | 6 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 0
+EQ | 10 | 
+   frequency_div/a1<11>.T := !frequency_div/a1<0> & !frequency_div/a1<10> & 
+	!frequency_div/a1<1> & !frequency_div/a1<2> & !frequency_div/a1<3> & 
+	!frequency_div/a1<4> & !frequency_div/a1<5> & !frequency_div/a1<6> & 
+	!frequency_div/a1<7> & !frequency_div/a1<8> & !frequency_div/a1<9>
+	# !frequency_div/a1<10> & !frequency_div/a1<1> & 
+	!frequency_div/a1<2> & !frequency_div/a1<3> & !frequency_div/a1<4> & 
+	!frequency_div/a1<5> & !frequency_div/a1<6> & !frequency_div/a1<7> & 
+	!frequency_div/a1<8> & !frequency_div/a1<9> & !frequency_div/a1<11>;	// (2 pt, 12 inp)
+   frequency_div/a1<11>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a1<11>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 3 | 3 | seg<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   seg<0> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 4 | seg<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   seg<1> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 5 | seg<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   seg<2> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 11 | seg<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   seg<3> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 13 | seg<4>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   seg<4> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 4 | 1 | seg<5>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   seg<5> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 1 | seg<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   !seg<6> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 2 | seg<7>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   !seg<7> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 0 | tc_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 8 | mod60_counter/mod60_out<0>  | mod60_counter/mod60_out<4>  | mod60_counter/mod60_out<1>  | mod60_counter/mod60_out<2>  | mod60_counter/mod60_out<3>  | mod60_counter/mod60_out<5>  | mod60_counter/mod60_out<6>  | mod60_counter/mod60_out<7>
+INPUTMC | 8 | 0 | 3 | 2 | 13 | 3 | 14 | 3 | 7 | 3 | 12 | 3 | 9 | 3 | 10 | 3 | 8
+EQ | 5 | 
+   tc = mod60_counter/mod60_out<0> & 
+	mod60_counter/mod60_out<4> & !mod60_counter/mod60_out<1> & 
+	!mod60_counter/mod60_out<2> & mod60_counter/mod60_out<3> & 
+	!mod60_counter/mod60_out<5> & mod60_counter/mod60_out<6> & 
+	!mod60_counter/mod60_out<7>;	// (1 pt, 8 inp)
+
+MACROCELL | 0 | 3 | mod60_counter/mod60_out<0>_MC
+ATTRIBUTES | 2319450112 | 4
+OUTPUTMC | 5 | 3 | 14 | 3 | 7 | 3 | 12 | 3 | 15 | 3 | 0
+INPUTS | 0 
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   
+// Direct Input Register
+mod60_counter/mod60_out<0>.T := ce;	// (0 pt, 0 inp)
+    mod60_counter/mod60_out<0>.CLK = clk_1s;	// CTC	(1 pt, 1 inp)
+   mod60_counter/mod60_out<0>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 12 | clk_1s_MC
+ATTRIBUTES | 2168488704 | 0
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 12 | 
+   clk_1s.T := frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17> & !frequency_div/a3<18> & !frequency_div/a3<19> & 
+	!frequency_div/a3<20> & !frequency_div/a3<21> & !frequency_div/a3<22> & 
+	!frequency_div/a3<23> & !frequency_div/a3<24> & !frequency_div/a3<25> & 
+	!frequency_div/a3<26> & !frequency_div/a3<27>;	// (1 pt, 28 inp)
+   clk_1s.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   clk_1s.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 0 | 14 | frequency_div/a3<0>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 28 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 0
+EQ | 3 | 
+   !frequency_div/a3<0>.T := Gnd;	// (0 pt, 0 inp)
+   frequency_div/a3<0>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<0>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 15 | frequency_div/a3<10>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 19 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<10>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 15 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 16 | 
+   frequency_div/a3<10>.T := !frequency_div/a3<0> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9>
+	# !frequency_div/a3<10> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9> & !frequency_div/a3<11> & 
+	!frequency_div/a3<12> & !frequency_div/a3<13> & !frequency_div/a3<14> & 
+	!frequency_div/a3<15> & !frequency_div/a3<16> & !frequency_div/a3<17> & 
+	!frequency_div/a3<18> & !frequency_div/a3<19> & !frequency_div/a3<20> & 
+	!frequency_div/a3<21> & !frequency_div/a3<22> & !frequency_div/a3<23> & 
+	!frequency_div/a3<24> & !frequency_div/a3<25> & !frequency_div/a3<26> & 
+	!frequency_div/a3<27>;	// (2 pt, 28 inp)
+   frequency_div/a3<10>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<10>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 2 | frequency_div/a3<1>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 27 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 1 | frequency_div/a3<0>
+INPUTMC | 1 | 0 | 14
+EQ | 3 | 
+   frequency_div/a3<1>.T := !frequency_div/a3<0>;	// (1 pt, 1 inp)
+   frequency_div/a3<1>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<1>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 14 | frequency_div/a3<2>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 26 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 2 | frequency_div/a3<0>  | frequency_div/a3<1>
+INPUTMC | 2 | 0 | 14 | 0 | 2
+EQ | 3 | 
+   frequency_div/a3<2>.T := !frequency_div/a3<0> & !frequency_div/a3<1>;	// (1 pt, 2 inp)
+   frequency_div/a3<2>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<2>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 12 | frequency_div/a3<3>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 25 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 3 | frequency_div/a3<0>  | frequency_div/a3<1>  | frequency_div/a3<2>
+INPUTMC | 3 | 0 | 14 | 0 | 2 | 2 | 14
+EQ | 4 | 
+   frequency_div/a3<3>.T := !frequency_div/a3<0> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2>;	// (1 pt, 3 inp)
+   frequency_div/a3<3>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<3>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 11 | frequency_div/a3<4>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 24 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 4 | frequency_div/a3<0>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>
+INPUTMC | 4 | 0 | 14 | 0 | 2 | 2 | 14 | 2 | 12
+EQ | 4 | 
+   frequency_div/a3<4>.T := !frequency_div/a3<0> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3>;	// (1 pt, 4 inp)
+   frequency_div/a3<4>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<4>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 10 | frequency_div/a3<5>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 23 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 5 | frequency_div/a3<0>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>
+INPUTMC | 5 | 0 | 14 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11
+EQ | 4 | 
+   frequency_div/a3<5>.T := !frequency_div/a3<0> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4>;	// (1 pt, 5 inp)
+   frequency_div/a3<5>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<5>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 9 | frequency_div/a3<6>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 22 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 6 | frequency_div/a3<0>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>
+INPUTMC | 6 | 0 | 14 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10
+EQ | 5 | 
+   frequency_div/a3<6>.T := !frequency_div/a3<0> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5>;	// (1 pt, 6 inp)
+   frequency_div/a3<6>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<6>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 8 | frequency_div/a3<7>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 21 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 7 | frequency_div/a3<0>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>
+INPUTMC | 7 | 0 | 14 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9
+EQ | 5 | 
+   frequency_div/a3<7>.T := !frequency_div/a3<0> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6>;	// (1 pt, 7 inp)
+   frequency_div/a3<7>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<7>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 7 | frequency_div/a3<8>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 20 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 8 | frequency_div/a3<0>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>
+INPUTMC | 8 | 0 | 14 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8
+EQ | 5 | 
+   frequency_div/a3<8>.T := !frequency_div/a3<0> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7>;	// (1 pt, 8 inp)
+   frequency_div/a3<8>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<8>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 2 | 6 | frequency_div/a3<9>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 19 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 9 | frequency_div/a3<0>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>
+INPUTMC | 9 | 0 | 14 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+EQ | 6 | 
+   frequency_div/a3<9>.T := !frequency_div/a3<0> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8>;	// (1 pt, 9 inp)
+   frequency_div/a3<9>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<9>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 10 | frequency_div/a3<11>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 19 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 16 | 
+   frequency_div/a3<11>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9>
+	# !frequency_div/a3<10> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9> & !frequency_div/a3<11> & 
+	!frequency_div/a3<12> & !frequency_div/a3<13> & !frequency_div/a3<14> & 
+	!frequency_div/a3<15> & !frequency_div/a3<16> & !frequency_div/a3<17> & 
+	!frequency_div/a3<18> & !frequency_div/a3<19> & !frequency_div/a3<20> & 
+	!frequency_div/a3<21> & !frequency_div/a3<22> & !frequency_div/a3<23> & 
+	!frequency_div/a3<24> & !frequency_div/a3<25> & !frequency_div/a3<26> & 
+	!frequency_div/a3<27>;	// (2 pt, 28 inp)
+   frequency_div/a3<11>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<11>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 1 | 9 | frequency_div/a3<12>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 19 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 17 | 
+   frequency_div/a3<12>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11>
+	# !frequency_div/a3<10> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9> & !frequency_div/a3<11> & 
+	!frequency_div/a3<12> & !frequency_div/a3<13> & !frequency_div/a3<14> & 
+	!frequency_div/a3<15> & !frequency_div/a3<16> & !frequency_div/a3<17> & 
+	!frequency_div/a3<18> & !frequency_div/a3<19> & !frequency_div/a3<20> & 
+	!frequency_div/a3<21> & !frequency_div/a3<22> & !frequency_div/a3<23> & 
+	!frequency_div/a3<24> & !frequency_div/a3<25> & !frequency_div/a3<26> & 
+	!frequency_div/a3<27>;	// (2 pt, 28 inp)
+   frequency_div/a3<12>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<12>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 5 | frequency_div/a3<13>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 18 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 13 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>
+INPUTMC | 13 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9
+EQ | 7 | 
+   frequency_div/a3<13>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12>;	// (1 pt, 13 inp)
+   frequency_div/a3<13>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<13>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 3 | frequency_div/a3<14>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 17 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 14 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>
+INPUTMC | 14 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5
+EQ | 7 | 
+   frequency_div/a3<14>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13>;	// (1 pt, 14 inp)
+   frequency_div/a3<14>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<14>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 15 | frequency_div/a3<15>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 16 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 15 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>
+INPUTMC | 15 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3
+EQ | 8 | 
+   frequency_div/a3<15>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14>;	// (1 pt, 15 inp)
+   frequency_div/a3<15>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<15>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 0 | frequency_div/a3<16>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 15 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 16 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>
+INPUTMC | 16 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15
+EQ | 8 | 
+   frequency_div/a3<16>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15>;	// (1 pt, 16 inp)
+   frequency_div/a3<16>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<16>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 1 | 8 | frequency_div/a3<17>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 15 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 18 | 
+   frequency_div/a3<17>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16>
+	# !frequency_div/a3<10> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9> & !frequency_div/a3<11> & 
+	!frequency_div/a3<12> & !frequency_div/a3<13> & !frequency_div/a3<14> & 
+	!frequency_div/a3<15> & !frequency_div/a3<16> & !frequency_div/a3<17> & 
+	!frequency_div/a3<18> & !frequency_div/a3<19> & !frequency_div/a3<20> & 
+	!frequency_div/a3<21> & !frequency_div/a3<22> & !frequency_div/a3<23> & 
+	!frequency_div/a3<24> & !frequency_div/a3<25> & !frequency_div/a3<26> & 
+	!frequency_div/a3<27>;	// (2 pt, 28 inp)
+   frequency_div/a3<17>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<17>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 7 | frequency_div/a3<18>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 15 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 19 | 
+   frequency_div/a3<18>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17>
+	# !frequency_div/a3<10> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9> & !frequency_div/a3<11> & 
+	!frequency_div/a3<12> & !frequency_div/a3<13> & !frequency_div/a3<14> & 
+	!frequency_div/a3<15> & !frequency_div/a3<16> & !frequency_div/a3<17> & 
+	!frequency_div/a3<18> & !frequency_div/a3<19> & !frequency_div/a3<20> & 
+	!frequency_div/a3<21> & !frequency_div/a3<22> & !frequency_div/a3<23> & 
+	!frequency_div/a3<24> & !frequency_div/a3<25> & !frequency_div/a3<26> & 
+	!frequency_div/a3<27>;	// (2 pt, 28 inp)
+   frequency_div/a3<18>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<18>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 1 | 6 | frequency_div/a3<19>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 15 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 19 | 
+   frequency_div/a3<19>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17> & !frequency_div/a3<18>
+	# !frequency_div/a3<10> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9> & !frequency_div/a3<11> & 
+	!frequency_div/a3<12> & !frequency_div/a3<13> & !frequency_div/a3<14> & 
+	!frequency_div/a3<15> & !frequency_div/a3<16> & !frequency_div/a3<17> & 
+	!frequency_div/a3<18> & !frequency_div/a3<19> & !frequency_div/a3<20> & 
+	!frequency_div/a3<21> & !frequency_div/a3<22> & !frequency_div/a3<23> & 
+	!frequency_div/a3<24> & !frequency_div/a3<25> & !frequency_div/a3<26> & 
+	!frequency_div/a3<27>;	// (2 pt, 28 inp)
+   frequency_div/a3<19>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<19>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 1 | 2 | frequency_div/a3<20>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 14 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 20 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>
+INPUTMC | 20 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6
+EQ | 9 | 
+   frequency_div/a3<20>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17> & !frequency_div/a3<18> & !frequency_div/a3<19>;	// (1 pt, 20 inp)
+   frequency_div/a3<20>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<20>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 1 | 3 | frequency_div/a3<21>_MC
+ATTRIBUTES | 2168488704 | 0
+OUTPUTMC | 13 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 21 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>
+INPUTMC | 21 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2
+EQ | 10 | 
+   frequency_div/a3<21>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17> & !frequency_div/a3<18> & !frequency_div/a3<19> & 
+	!frequency_div/a3<20>;	// (1 pt, 21 inp)
+   frequency_div/a3<21>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<21>.AP = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 1 | 5 | frequency_div/a3<22>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 13 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 20 | 
+   frequency_div/a3<22>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17> & !frequency_div/a3<18> & !frequency_div/a3<19> & 
+	!frequency_div/a3<20> & !frequency_div/a3<21>
+	# !frequency_div/a3<10> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9> & !frequency_div/a3<11> & 
+	!frequency_div/a3<12> & !frequency_div/a3<13> & !frequency_div/a3<14> & 
+	!frequency_div/a3<15> & !frequency_div/a3<16> & !frequency_div/a3<17> & 
+	!frequency_div/a3<18> & !frequency_div/a3<19> & !frequency_div/a3<20> & 
+	!frequency_div/a3<21> & !frequency_div/a3<22> & !frequency_div/a3<23> & 
+	!frequency_div/a3<24> & !frequency_div/a3<25> & !frequency_div/a3<26> & 
+	!frequency_div/a3<27>;	// (2 pt, 28 inp)
+   frequency_div/a3<22>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<22>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 4 | frequency_div/a3<23>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 12 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 23 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>
+INPUTMC | 23 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5
+EQ | 10 | 
+   frequency_div/a3<23>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17> & !frequency_div/a3<18> & !frequency_div/a3<19> & 
+	!frequency_div/a3<20> & !frequency_div/a3<21> & !frequency_div/a3<22>;	// (1 pt, 23 inp)
+   frequency_div/a3<23>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<23>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 11 | frequency_div/a3<24>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 24 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>
+INPUTMC | 24 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4
+EQ | 11 | 
+   frequency_div/a3<24>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17> & !frequency_div/a3<18> & !frequency_div/a3<19> & 
+	!frequency_div/a3<20> & !frequency_div/a3<21> & !frequency_div/a3<22> & 
+	!frequency_div/a3<23>;	// (1 pt, 24 inp)
+   frequency_div/a3<24>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<24>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 1 | frequency_div/a3<25>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 21 | 
+   frequency_div/a3<25>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17> & !frequency_div/a3<18> & !frequency_div/a3<19> & 
+	!frequency_div/a3<20> & !frequency_div/a3<21> & !frequency_div/a3<22> & 
+	!frequency_div/a3<23> & !frequency_div/a3<24>
+	# !frequency_div/a3<10> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9> & !frequency_div/a3<11> & 
+	!frequency_div/a3<12> & !frequency_div/a3<13> & !frequency_div/a3<14> & 
+	!frequency_div/a3<15> & !frequency_div/a3<16> & !frequency_div/a3<17> & 
+	!frequency_div/a3<18> & !frequency_div/a3<19> & !frequency_div/a3<20> & 
+	!frequency_div/a3<21> & !frequency_div/a3<22> & !frequency_div/a3<23> & 
+	!frequency_div/a3<24> & !frequency_div/a3<25> & !frequency_div/a3<26> & 
+	!frequency_div/a3<27>;	// (2 pt, 28 inp)
+   frequency_div/a3<25>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<25>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 14 | frequency_div/a3<26>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 21 | 
+   frequency_div/a3<26>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17> & !frequency_div/a3<18> & !frequency_div/a3<19> & 
+	!frequency_div/a3<20> & !frequency_div/a3<21> & !frequency_div/a3<22> & 
+	!frequency_div/a3<23> & !frequency_div/a3<24> & !frequency_div/a3<25>
+	# !frequency_div/a3<10> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9> & !frequency_div/a3<11> & 
+	!frequency_div/a3<12> & !frequency_div/a3<13> & !frequency_div/a3<14> & 
+	!frequency_div/a3<15> & !frequency_div/a3<16> & !frequency_div/a3<17> & 
+	!frequency_div/a3<18> & !frequency_div/a3<19> & !frequency_div/a3<20> & 
+	!frequency_div/a3<21> & !frequency_div/a3<22> & !frequency_div/a3<23> & 
+	!frequency_div/a3<24> & !frequency_div/a3<25> & !frequency_div/a3<26> & 
+	!frequency_div/a3<27>;	// (2 pt, 28 inp)
+   frequency_div/a3<26>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<26>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 13 | frequency_div/a3<27>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+INPUTS | 28 | frequency_div/a3<0>  | frequency_div/a3<10>  | frequency_div/a3<1>  | frequency_div/a3<2>  | frequency_div/a3<3>  | frequency_div/a3<4>  | frequency_div/a3<5>  | frequency_div/a3<6>  | frequency_div/a3<7>  | frequency_div/a3<8>  | frequency_div/a3<9>  | frequency_div/a3<11>  | frequency_div/a3<12>  | frequency_div/a3<13>  | frequency_div/a3<14>  | frequency_div/a3<15>  | frequency_div/a3<16>  | frequency_div/a3<17>  | frequency_div/a3<18>  | frequency_div/a3<19>  | frequency_div/a3<20>  | frequency_div/a3<21>  | frequency_div/a3<22>  | frequency_div/a3<23>  | frequency_div/a3<24>  | frequency_div/a3<25>  | frequency_div/a3<26>  | frequency_div/a3<27>
+INPUTMC | 28 | 0 | 14 | 1 | 15 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 1 | 10 | 1 | 9 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 11 | 1 | 1 | 1 | 14 | 1 | 13
+EQ | 22 | 
+   frequency_div/a3<27>.T := !frequency_div/a3<0> & !frequency_div/a3<10> & 
+	!frequency_div/a3<1> & !frequency_div/a3<2> & !frequency_div/a3<3> & 
+	!frequency_div/a3<4> & !frequency_div/a3<5> & !frequency_div/a3<6> & 
+	!frequency_div/a3<7> & !frequency_div/a3<8> & !frequency_div/a3<9> & 
+	!frequency_div/a3<11> & !frequency_div/a3<12> & !frequency_div/a3<13> & 
+	!frequency_div/a3<14> & !frequency_div/a3<15> & !frequency_div/a3<16> & 
+	!frequency_div/a3<17> & !frequency_div/a3<18> & !frequency_div/a3<19> & 
+	!frequency_div/a3<20> & !frequency_div/a3<21> & !frequency_div/a3<22> & 
+	!frequency_div/a3<23> & !frequency_div/a3<24> & !frequency_div/a3<25> & 
+	!frequency_div/a3<26>
+	# !frequency_div/a3<10> & !frequency_div/a3<1> & 
+	!frequency_div/a3<2> & !frequency_div/a3<3> & !frequency_div/a3<4> & 
+	!frequency_div/a3<5> & !frequency_div/a3<6> & !frequency_div/a3<7> & 
+	!frequency_div/a3<8> & !frequency_div/a3<9> & !frequency_div/a3<11> & 
+	!frequency_div/a3<12> & !frequency_div/a3<13> & !frequency_div/a3<14> & 
+	!frequency_div/a3<15> & !frequency_div/a3<16> & !frequency_div/a3<17> & 
+	!frequency_div/a3<18> & !frequency_div/a3<19> & !frequency_div/a3<20> & 
+	!frequency_div/a3<21> & !frequency_div/a3<22> & !frequency_div/a3<23> & 
+	!frequency_div/a3<24> & !frequency_div/a3<25> & !frequency_div/a3<26> & 
+	!frequency_div/a3<27>;	// (2 pt, 28 inp)
+   frequency_div/a3<27>.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+   frequency_div/a3<27>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 13 | mod60_counter/mod60_out<4>_MC
+ATTRIBUTES | 2185233184 | 0
+OUTPUTMC | 4 | 3 | 8 | 3 | 10 | 3 | 9 | 3 | 0
+INPUTS | 2 | ce  | mod60_counter/mod6_clk
+INPUTMC | 1 | 3 | 15
+INPUTP | 1 | 217
+EQ | 3 | 
+   mod60_counter/mod60_out<4>.T := ce;	// (1 pt, 1 inp)
+    mod60_counter/mod60_out<4>.CLK = mod60_counter/mod6_clk;	// PTC	(1 pt, 1 inp)
+   mod60_counter/mod60_out<4>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 15 | mod60_counter/mod6_clk_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 4 | 2 | 13 | 3 | 8 | 3 | 10 | 3 | 9
+INPUTS | 4 | mod60_counter/mod60_out<0>  | mod60_counter/mod60_out<1>  | mod60_counter/mod60_out<2>  | mod60_counter/mod60_out<3>
+INPUTMC | 4 | 0 | 3 | 3 | 14 | 3 | 7 | 3 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   mod60_counter/mod6_clk := mod60_counter/mod60_out<0> & 
+	!mod60_counter/mod60_out<1> & !mod60_counter/mod60_out<2> & 
+	mod60_counter/mod60_out<3>;	// (1 pt, 4 inp)
+    mod60_counter/mod6_clk.CLK = clk_1s;	// CTC	(1 pt, 1 inp)
+   mod60_counter/mod6_clk.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 14 | mod60_counter/mod60_out<1>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 5 | 3 | 7 | 3 | 12 | 3 | 14 | 3 | 15 | 3 | 0
+INPUTS | 5 | mod60_counter/mod60_out<0>  | ce  | mod60_counter/mod60_out<1>  | mod60_counter/mod60_out<2>  | mod60_counter/mod60_out<3>
+INPUTMC | 4 | 0 | 3 | 3 | 14 | 3 | 7 | 3 | 12
+INPUTP | 1 | 217
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   mod60_counter/mod60_out<1>.T := mod60_counter/mod60_out<0> & ce
+	$ mod60_counter/mod60_out<0> & ce & 
+	!mod60_counter/mod60_out<1> & !mod60_counter/mod60_out<2> & 
+	mod60_counter/mod60_out<3>;	// (2 pt, 5 inp)
+    mod60_counter/mod60_out<1>.CLK = clk_1s;	// CTC	(1 pt, 1 inp)
+   mod60_counter/mod60_out<1>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 7 | mod60_counter/mod60_out<2>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 4 | 3 | 12 | 3 | 14 | 3 | 15 | 3 | 0
+INPUTS | 3 | mod60_counter/mod60_out<0>  | ce  | mod60_counter/mod60_out<1>
+INPUTMC | 2 | 0 | 3 | 3 | 14
+INPUTP | 1 | 217
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   mod60_counter/mod60_out<2>.T := mod60_counter/mod60_out<0> & ce & 
+	mod60_counter/mod60_out<1>;	// (1 pt, 3 inp)
+    mod60_counter/mod60_out<2>.CLK = clk_1s;	// CTC	(1 pt, 1 inp)
+   mod60_counter/mod60_out<2>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 12 | mod60_counter/mod60_out<3>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 4 | 3 | 12 | 3 | 14 | 3 | 15 | 3 | 0
+INPUTS | 5 | mod60_counter/mod60_out<0>  | ce  | mod60_counter/mod60_out<1>  | mod60_counter/mod60_out<2>  | mod60_counter/mod60_out<3>
+INPUTMC | 4 | 0 | 3 | 3 | 14 | 3 | 7 | 3 | 12
+INPUTP | 1 | 217
+LCT | 1 | 2 | Internal_Name
+EQ | 7 | 
+   mod60_counter/mod60_out<3>.T := mod60_counter/mod60_out<0> & ce & 
+	mod60_counter/mod60_out<1> & mod60_counter/mod60_out<2>
+	# mod60_counter/mod60_out<0> & ce & 
+	!mod60_counter/mod60_out<1> & !mod60_counter/mod60_out<2> & 
+	mod60_counter/mod60_out<3>;	// (2 pt, 5 inp)
+    mod60_counter/mod60_out<3>.CLK = clk_1s;	// CTC	(1 pt, 1 inp)
+   mod60_counter/mod60_out<3>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 9 | mod60_counter/mod60_out<5>_MC
+ATTRIBUTES | 2185233184 | 0
+OUTPUTMC | 4 | 3 | 8 | 3 | 10 | 3 | 9 | 3 | 0
+INPUTS | 6 | mod60_counter/mod60_out<4>  | ce  | mod60_counter/mod60_out<5>  | mod60_counter/mod60_out<6>  | mod60_counter/mod60_out<7>  | mod60_counter/mod6_clk
+INPUTMC | 5 | 2 | 13 | 3 | 9 | 3 | 10 | 3 | 8 | 3 | 15
+INPUTP | 1 | 217
+EQ | 8 | 
+   mod60_counter/mod60_out<5>.T := mod60_counter/mod60_out<4> & ce & 
+	mod60_counter/mod60_out<5>
+	# mod60_counter/mod60_out<4> & ce & 
+	!mod60_counter/mod60_out<6>
+	# mod60_counter/mod60_out<4> & ce & 
+	mod60_counter/mod60_out<7>;	// (3 pt, 5 inp)
+    mod60_counter/mod60_out<5>.CLK = mod60_counter/mod6_clk;	// PTC	(1 pt, 1 inp)
+   mod60_counter/mod60_out<5>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 10 | mod60_counter/mod60_out<6>_MC
+ATTRIBUTES | 2185233184 | 0
+OUTPUTMC | 4 | 3 | 8 | 3 | 10 | 3 | 9 | 3 | 0
+INPUTS | 6 | mod60_counter/mod60_out<4>  | ce  | mod60_counter/mod60_out<5>  | mod60_counter/mod60_out<6>  | mod60_counter/mod60_out<7>  | mod60_counter/mod6_clk
+INPUTMC | 5 | 2 | 13 | 3 | 9 | 3 | 10 | 3 | 8 | 3 | 15
+INPUTP | 1 | 217
+EQ | 6 | 
+   mod60_counter/mod60_out<6>.T := mod60_counter/mod60_out<4> & ce & 
+	mod60_counter/mod60_out<5>
+	# mod60_counter/mod60_out<4> & ce & 
+	mod60_counter/mod60_out<6> & !mod60_counter/mod60_out<7>;	// (2 pt, 5 inp)
+    mod60_counter/mod60_out<6>.CLK = mod60_counter/mod6_clk;	// PTC	(1 pt, 1 inp)
+   mod60_counter/mod60_out<6>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 8 | mod60_counter/mod60_out<7>_MC
+ATTRIBUTES | 2185233184 | 0
+OUTPUTMC | 3 | 3 | 10 | 3 | 9 | 3 | 0
+INPUTS | 5 | mod60_counter/mod60_out<4>  | ce  | mod60_counter/mod60_out<5>  | mod60_counter/mod60_out<6>  | mod60_counter/mod6_clk
+INPUTMC | 4 | 2 | 13 | 3 | 9 | 3 | 10 | 3 | 15
+INPUTP | 1 | 217
+EQ | 4 | 
+   mod60_counter/mod60_out<7>.T := mod60_counter/mod60_out<4> & ce & 
+	mod60_counter/mod60_out<5> & mod60_counter/mod60_out<6>;	// (1 pt, 4 inp)
+    mod60_counter/mod60_out<7>.CLK = mod60_counter/mod6_clk;	// PTC	(1 pt, 1 inp)
+   mod60_counter/mod60_out<7>.AR = reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+PIN | clk | 8192 | 16 | LVCMOS18 | 50 | 42 | 0 | 15 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4 | 0 | 14 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12
+PIN | reset | 65536 | 16 | LVCMOS18 | 218 | 55 | 0 | 15 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 0 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 1 | 0 | 4 | 2 | 4 | 2 | 2 | 2 | 1 | 2 | 0 | 0 | 14 | 0 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 12 | 0 | 3 | 3 | 7 | 3 | 12 | 3 | 14 | 3 | 15 | 2 | 13 | 3 | 8 | 3 | 10 | 3 | 9
+PIN | ce | 64 | 16 | LVCMOS18 | 217 | 8 | 2 | 13 | 3 | 14 | 3 | 7 | 3 | 12 | 3 | 8 | 3 | 10 | 3 | 9 | 0 | 3
+PIN | anode<0> | 536871040 | 0 | LVCMOS18 | 208
+PIN | anode<1> | 536871040 | 0 | LVCMOS18 | 207
+PIN | anode<2> | 536871040 | 0 | LVCMOS18 | 206
+PIN | anode<3> | 536871040 | 0 | LVCMOS18 | 204
+PIN | seg<0> | 536871040 | 0 | LVCMOS18 | 18
+PIN | seg<1> | 536871040 | 0 | LVCMOS18 | 19
+PIN | seg<2> | 536871040 | 0 | LVCMOS18 | 20
+PIN | seg<3> | 536871040 | 0 | LVCMOS18 | 21
+PIN | seg<4> | 536871040 | 0 | LVCMOS18 | 23
+PIN | seg<5> | 536871040 | 0 | LVCMOS18 | 52
+PIN | seg<6> | 536871040 | 0 | LVCMOS18 | 16
+PIN | seg<7> | 536871040 | 0 | LVCMOS18 | 17
+PIN | tc | 536871040 | 0 | LVCMOS18 | 15

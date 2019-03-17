@@ -1,0 +1,58 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+ce S:PIN142
+clk S:PIN32
+reset S:PIN143
+anode<0> S:PIN136
+anode<1> S:PIN135
+anode<2> S:PIN134
+anode<3> S:PIN133
+seg<0> S:PIN14
+seg<1> S:PIN15
+seg<2> S:PIN16
+seg<3> S:PIN17
+seg<4> S:PIN18
+seg<5> S:PIN33
+seg<6> S:PIN12
+seg<7> S:PIN13
+tc S:PIN11
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 frequency_div/a1<11> frequency_div/a1<10> frequency_div/a3<1> mod60_counter/mod60_out<0>
+		 clk_1kHz frequency_div/a1<9> frequency_div/a1<6> frequency_div/a1<4>
+		 frequency_div/a1<3> frequency_div/a1<2> frequency_div/a1<1> frequency_div/a1<8>
+		 frequency_div/a1<7> frequency_div/a1<5> frequency_div/a3<0> frequency_div/a1<0>
+		
+PARTITION FB2_1 frequency_div/a3<16> frequency_div/a3<25> frequency_div/a3<20> frequency_div/a3<21>
+		 frequency_div/a3<23> frequency_div/a3<22> frequency_div/a3<19> frequency_div/a3<18>
+		 frequency_div/a3<17> frequency_div/a3<12> frequency_div/a3<11> frequency_div/a3<24>
+		 clk_1s frequency_div/a3<27> frequency_div/a3<26> frequency_div/a3<10>
+		
+PARTITION FB3_1 anode<0> anode<1> anode<2> frequency_div/a3<14>
+		 anode<3> frequency_div/a3<13> frequency_div/a3<9> frequency_div/a3<8>
+		 frequency_div/a3<7> frequency_div/a3<6> frequency_div/a3<5> frequency_div/a3<4>
+		 frequency_div/a3<3> mod60_counter/mod60_out<4> frequency_div/a3<2> frequency_div/a3<15>
+		
+PARTITION FB4_1 tc seg<6> seg<7> seg<0>
+		 seg<1> seg<2>
+PARTITION FB4_8 mod60_counter/mod60_out<2> mod60_counter/mod60_out<7> mod60_counter/mod60_out<5> mod60_counter/mod60_out<6>
+		 seg<3> mod60_counter/mod60_out<3> seg<4> mod60_counter/mod60_out<1>
+		 mod60_counter/mod6_clk
+PARTITION FB5_2 seg<5>
+
+
+
+
+
+
+
+
+
+
+
+
+

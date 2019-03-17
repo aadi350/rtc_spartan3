@@ -1,0 +1,3 @@
+vhdtdtfi -lib work frequency_div.vhd -prj test_display -o frequency_div.spl -module frequency_div -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr frequency_div.spl {D:/Xilinx Projects/test_display/test_display/frequency_div.sym} 
+vhdtdtfi -prj test_display -o "D:/Xilinx Projects/test_display/test_display/frequency_div.vhi" -module frequency_div -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work frequency_div.vhd 

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (LVTTL|SSTL3_I|LVCMOS33|LVCMOS25|SSTL2_I|LVCMOS18|LVCMOS15|HSTL_I|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xbr" device="XC2C256" pkg="TQ144" spg="-6"/><pin dir="input" iostd="LVCMOS18" nm="clk" no="32"/><pin dir="input" iostd="LVCMOS18" nm="reset" no="143"/><pin dir="input" iostd="LVCMOS18" nm="ce" no="142"/><pin dir="output" iostd="LVCMOS18" nm="anode&lt;0&gt;" no="136" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="anode&lt;1&gt;" no="135" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="anode&lt;2&gt;" no="134" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="anode&lt;3&gt;" no="133" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="seg&lt;0&gt;" no="14" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="seg&lt;1&gt;" no="15" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="seg&lt;2&gt;" no="16" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="seg&lt;3&gt;" no="17" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="seg&lt;4&gt;" no="18" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="seg&lt;5&gt;" no="33" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="seg&lt;6&gt;" no="12" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="seg&lt;7&gt;" no="13" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="tc" no="11" sr="fast"/></ibis>

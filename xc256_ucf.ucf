@@ -1,0 +1,16 @@
+NET "clk" LOC  = "P38";
+NET "tc"  LOC  = "P69";
+NET "ce"  LOC = "P124"  ;
+NET "reset" LOC = "P39";
+NET "anode<0>" LOC  = "P126";
+NET "anode<1>" LOC  = "P128";
+NET "anode<2>" LOC  = "P129";
+NET "anode<3>" LOC = "P130";
+NET "seg<0>" LOC = "P56";
+NET "seg<1>" LOC = "P53";
+NET "seg<2>" LOC = "P60";
+NET "seg<3>" LOC = "P58";
+NET "seg<4>" LOC = "P57";
+NET "seg<5>" LOC = "P54";
+NET "seg<6>" LOC = "P61";
+NET "seg<7>" LOC = "P59";

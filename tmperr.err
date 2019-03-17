@@ -1,0 +1,40 @@
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'display_driver.ise'.
+ERROR:Cpld:832 - 'anode<0>' is assigned to an invalid location ('E13') for this
+   device.  This will prevent the design from fitting on the current device.
+   'anode<0>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'anode<1>' is assigned to an invalid location ('F14') for this
+   device.  This will prevent the design from fitting on the current device.
+   'anode<1>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'anode<2>' is assigned to an invalid location ('G14') for this
+   device.  This will prevent the design from fitting on the current device.
+   'anode<2>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'anode<3>' is assigned to an invalid location ('D14') for this
+   device.  This will prevent the design from fitting on the current device.
+   'anode<3>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<5>' is assigned to an invalid location ('F13') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<5>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<4>' is assigned to an invalid location ('R16') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<4>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<2>' is assigned to an invalid location ('N15') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<2>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<1>' is assigned to an invalid location ('G13') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<1>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<0>' is assigned to an invalid location ('E14') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<0>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<6>' is assigned to an invalid location ('N16') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<6>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'reset' is assigned to an invalid location ('L14') for this
+   device.  This will prevent the design from fitting on the current device.
+   'reset' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'clk' is assigned to an invalid location ('T9') for this
+   device.  This will prevent the design from fitting on the current device.
+   'clk' must be reassigned before attempting a re-fit.
+ERROR:Cpld:868 - Cannot fit the design into any of the specified devices with
+   the selected implementation options.

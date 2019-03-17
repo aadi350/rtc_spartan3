@@ -1,0 +1,1006 @@
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  No Fit Report
+Design Name: display_driver                      Date:  3-10-2019,  1:29PM
+Device Used: XC2C256-6-TQ144
+Fitting Status: Design Rule Checking Failed
+
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'display_driver.ise'.
+ERROR:Cpld:832 - 'anode<0>' is assigned to an invalid location ('E13') for this
+   device.  This will prevent the design from fitting on the current device.
+   'anode<0>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'anode<1>' is assigned to an invalid location ('F14') for this
+   device.  This will prevent the design from fitting on the current device.
+   'anode<1>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'anode<2>' is assigned to an invalid location ('G14') for this
+   device.  This will prevent the design from fitting on the current device.
+   'anode<2>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'anode<3>' is assigned to an invalid location ('D14') for this
+   device.  This will prevent the design from fitting on the current device.
+   'anode<3>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<5>' is assigned to an invalid location ('F13') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<5>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<4>' is assigned to an invalid location ('R16') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<4>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<2>' is assigned to an invalid location ('N15') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<2>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<1>' is assigned to an invalid location ('G13') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<1>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<0>' is assigned to an invalid location ('E14') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<0>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'seg<6>' is assigned to an invalid location ('N16') for this
+   device.  This will prevent the design from fitting on the current device.
+   'seg<6>' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'reset' is assigned to an invalid location ('L14') for this
+   device.  This will prevent the design from fitting on the current device.
+   'reset' must be reassigned before attempting a re-fit.
+ERROR:Cpld:832 - 'clk' is assigned to an invalid location ('T9') for this
+   device.  This will prevent the design from fitting on the current device.
+   'clk' must be reassigned before attempting a re-fit.
+ERROR:Cpld:868 - Cannot fit the design into any of the specified devices with
+   the selected implementation options.
+*************************  Mapped Resource Summary  **************************
+
+No logic has been mapped.
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+2  /256 (  1%) 0   /896  (  0%) 0   /640  (  0%) 0  /256 (  0%) 2  /118 (  2%)
+
+** Function Block Resources **
+
+Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
+Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
+FB1       0/16      0/40     0/56     0/ 6    0/1      0/1      0/1      0/1
+FB2       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB3       0/16      0/40     0/56     0/ 6    0/1      0/1      0/1      0/1
+FB4       2/16      0/40     0/56     2/ 8    0/1      0/1      0/1      0/1
+FB5       0/16      0/40     0/56     0/ 5    0/1      0/1      0/1      0/1
+FB6       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB7       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB8       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB9       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB10      0/16      0/40     0/56     0/ 9    0/1      0/1      0/1      0/1
+FB11      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB12      0/16      0/40     0/56     0/ 6    0/1      0/1      0/1      0/1
+FB13      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB14      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB15      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
+FB16      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
+         -----    -------  -------   -----    ---      ---      ---      ---
+Total     2/256     0/640    0/896    2/118   0/16     0/16     0/16     0/16
+
+CTC - Control Term Clock
+CTR - Control Term Reset
+CTS - Control Term Set
+CTE - Control Term Output Enable
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+GCK         GSR         GTS         DGE         
+Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+0/3         0/1         0/4         0/1
+
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    3           0    |  I/O              :     2    108
+Output        :   13           2    |  GCK/IO           :     0      3
+Bidirectional :    0           0    |  GTS/IO           :     0      4
+GCK           :    0           0    |  GSR/IO           :     0      1
+GTS           :    0           0    |  CDR/IO           :     0      1
+GSR           :    0           0    |  DGE/IO           :     0      1
+                 ----        ----
+        Total     16           2
+
+End of Mapped Resource Summary
+*************************  Summary of Mapped Logic  ************************
+
+** 2 Outputs **
+
+Signal                                                  Total Total Bank Loc     Pin   Pin       Pin     I/O      
+Name                                                    Pts   Inps               No.   Type      Use     STD      
+seg<3>                                                  0     0     2    FB4_5   15    I/O       O       LVCMOS18 
+seg<7>                                                  0     0     2    FB4_6   16    I/O       O       LVCMOS18 
+
+Legend:
+Pin No.   - ~     - User Assigned
+I/O Style - OD    - OpenDrain
+          - PU    - Pullup
+          - KPR   - Keeper
+          - S     - SchmittTrigger
+          - DG    - DataGate
+Reg Use   - LATCH - Transparent latch
+          - DFF   - D-flip-flop
+          - DEFF  - D-flip-flop with clock enable
+          - TFF   - T-flip-flop
+          - TDFF  - Dual-edge-triggered T-flip-flop
+          - DDFF  - Dual-edge-triggered flip-flop
+          - DDEFF - Dual-edge-triggered flip-flop with clock enable
+          /S (after any above flop/latch type) indicates initial state is Set
+*************************  Summary of UnMapped Logic  ************************
+
+** 11 Outputs **
+
+Signal                                                  Total Total I/O      User
+Name                                                    Pts   Inps  STD      Assignment
+anode<0>                                                3     3     LVCMOS18 E13
+anode<1>                                                3     3     LVCMOS18 F14
+anode<2>                                                3     3     LVCMOS18 G14
+anode<3>                                                3     3     LVCMOS18 D14
+seg<5>                                                  0     0     LVCMOS18 F13
+seg<4>                                                  0     0     LVCMOS18 R16
+seg<2>                                                  0     0     LVCMOS18 N15
+seg<1>                                                  0     0     LVCMOS18 G13
+seg<0>                                                  0     0     LVCMOS18 E14
+seg<6>                                                  0     0     LVCMOS18 N16
+tc                                                      1     2     LVCMOS18 
+
+** 149 Buried Nodes **
+
+Signal                                                  Total Total User
+Name                                                    Pts   Inps  Assignment
+clk_1kHz                                                4     4     
+clk_1s                                                  4     4     
+frequency_div/Msub_clk1_addsub0000__or0000              2     2     
+frequency_div/Msub_clk1_addsub0000__or0001              2     2     
+frequency_div/Msub_clk1_addsub0000__or0002              2     2     
+frequency_div/Msub_clk1_addsub0000__or0003              2     2     
+frequency_div/Msub_clk1_addsub0000__or0004              2     2     
+frequency_div/Msub_clk1_addsub0000__or0005              2     2     
+frequency_div/Msub_clk1_addsub0000__or0006              2     2     
+frequency_div/Msub_clk1_addsub0000__or0007              2     2     
+frequency_div/Msub_clk1_addsub0000__or0008              2     2     
+frequency_div/Msub_clk1_addsub0000__or0009              2     2     
+frequency_div/Msub_clk3_addsub0000__or0000              2     2     
+frequency_div/Msub_clk3_addsub0000__or0001              2     2     
+frequency_div/Msub_clk3_addsub0000__or0002              2     2     
+frequency_div/Msub_clk3_addsub0000__or0003              2     2     
+frequency_div/Msub_clk3_addsub0000__or0004              2     2     
+frequency_div/Msub_clk3_addsub0000__or0005              2     2     
+frequency_div/Msub_clk3_addsub0000__or0006              2     2     
+frequency_div/Msub_clk3_addsub0000__or0007              2     2     
+frequency_div/Msub_clk3_addsub0000__or0008              2     2     
+frequency_div/Msub_clk3_addsub0000__or0009              2     2     
+frequency_div/Msub_clk3_addsub0000__or0010              2     2     
+frequency_div/Msub_clk3_addsub0000__or0011              2     2     
+frequency_div/Msub_clk3_addsub0000__or0012              2     2     
+frequency_div/Msub_clk3_addsub0000__or0013              2     2     
+frequency_div/Msub_clk3_addsub0000__or0014              2     2     
+frequency_div/Msub_clk3_addsub0000__or0015              2     2     
+frequency_div/Msub_clk3_addsub0000__or0016              2     2     
+frequency_div/Msub_clk3_addsub0000__or0017              2     2     
+frequency_div/Msub_clk3_addsub0000__or0018              2     2     
+frequency_div/Msub_clk3_addsub0000__or0019              2     2     
+frequency_div/Msub_clk3_addsub0000__or0020              2     2     
+frequency_div/Msub_clk3_addsub0000__or0021              2     2     
+frequency_div/Msub_clk3_addsub0000__or0022              2     2     
+frequency_div/Msub_clk3_addsub0000__or0023              2     2     
+frequency_div/Msub_clk3_addsub0000__or0024              2     2     
+frequency_div/Msub_clk3_addsub0000__or0025              2     2     
+frequency_div/a1<0>                                     3     4     
+frequency_div/a1<1>                                     3     4     
+
+Signal                                                  Total Total User
+Name                                                    Pts   Inps  Assignment
+frequency_div/a1<2>                                     3     4     
+frequency_div/a1<3>                                     3     4     
+frequency_div/a1<4>                                     3     4     
+frequency_div/a1<5>                                     4     4     
+frequency_div/a1<6>                                     3     4     
+frequency_div/a1<7>                                     4     4     
+frequency_div/a1<8>                                     4     4     
+frequency_div/a1<9>                                     4     4     
+frequency_div/a1<10>                                    4     4     
+frequency_div/a1<11>                                    4     4     
+frequency_div/a3<0>                                     3     4     
+frequency_div/a3<1>                                     3     4     
+frequency_div/a3<2>                                     3     4     
+frequency_div/a3<3>                                     3     4     
+frequency_div/a3<4>                                     3     4     
+frequency_div/a3<5>                                     3     4     
+frequency_div/a3<6>                                     3     4     
+frequency_div/a3<7>                                     3     4     
+frequency_div/a3<8>                                     3     4     
+frequency_div/a3<9>                                     3     4     
+frequency_div/a3<10>                                    4     4     
+frequency_div/a3<11>                                    4     4     
+frequency_div/a3<12>                                    4     4     
+frequency_div/a3<13>                                    3     4     
+frequency_div/a3<14>                                    3     4     
+frequency_div/a3<15>                                    3     4     
+frequency_div/a3<16>                                    3     4     
+frequency_div/a3<17>                                    4     4     
+frequency_div/a3<18>                                    4     4     
+frequency_div/a3<19>                                    4     4     
+frequency_div/a3<20>                                    3     4     
+frequency_div/a3<21>                                    3     4     
+frequency_div/a3<22>                                    4     4     
+frequency_div/a3<23>                                    3     4     
+frequency_div/a3<24>                                    3     4     
+frequency_div/a3<25>                                    4     4     
+frequency_div/a3<26>                                    4     4     
+frequency_div/a3<27>                                    4     4     
+frequency_div/clk1_addsub0000<1>                        2     2     
+frequency_div/clk1_addsub0000<2>                        2     2     
+
+Signal                                                  Total Total User
+Name                                                    Pts   Inps  Assignment
+frequency_div/clk1_addsub0000<3>                        2     2     
+frequency_div/clk1_addsub0000<4>                        2     2     
+frequency_div/clk1_addsub0000<5>                        2     2     
+frequency_div/clk1_addsub0000<6>                        2     2     
+frequency_div/clk1_addsub0000<7>                        2     2     
+frequency_div/clk1_addsub0000<8>                        2     2     
+frequency_div/clk1_addsub0000<9>                        2     2     
+frequency_div/clk1_addsub0000<10>                       2     2     
+frequency_div/clk1_addsub0000<11>                       2     2     
+frequency_div/clk1_cmp_eq0000                           1     2     
+frequency_div/clk1_cmp_eq000012                         1     8     
+frequency_div/clk1_cmp_eq000013                         1     4     
+frequency_div/clk3_addsub0000<1>                        2     2     
+frequency_div/clk3_addsub0000<2>                        2     2     
+frequency_div/clk3_addsub0000<3>                        2     2     
+frequency_div/clk3_addsub0000<4>                        2     2     
+frequency_div/clk3_addsub0000<5>                        2     2     
+frequency_div/clk3_addsub0000<6>                        2     2     
+frequency_div/clk3_addsub0000<7>                        2     2     
+frequency_div/clk3_addsub0000<8>                        2     2     
+frequency_div/clk3_addsub0000<9>                        2     2     
+frequency_div/clk3_addsub0000<10>                       2     2     
+frequency_div/clk3_addsub0000<11>                       2     2     
+frequency_div/clk3_addsub0000<12>                       2     2     
+frequency_div/clk3_addsub0000<13>                       2     2     
+frequency_div/clk3_addsub0000<14>                       2     2     
+frequency_div/clk3_addsub0000<15>                       2     2     
+frequency_div/clk3_addsub0000<16>                       2     2     
+frequency_div/clk3_addsub0000<17>                       2     2     
+frequency_div/clk3_addsub0000<18>                       2     2     
+frequency_div/clk3_addsub0000<19>                       2     2     
+frequency_div/clk3_addsub0000<20>                       2     2     
+frequency_div/clk3_addsub0000<21>                       2     2     
+frequency_div/clk3_addsub0000<22>                       2     2     
+frequency_div/clk3_addsub0000<23>                       2     2     
+frequency_div/clk3_addsub0000<24>                       2     2     
+frequency_div/clk3_addsub0000<25>                       2     2     
+frequency_div/clk3_addsub0000<26>                       2     2     
+frequency_div/clk3_addsub0000<27>                       2     2     
+frequency_div/clk3_cmp_eq0000                           1     4     
+
+Signal                                                  Total Total User
+Name                                                    Pts   Inps  Assignment
+frequency_div/clk3_cmp_eq000028                         1     8     
+frequency_div/clk3_cmp_eq000029                         1     8     
+frequency_div/clk3_cmp_eq000030                         1     8     
+frequency_div/clk3_cmp_eq000031                         1     4     
+mod60_counter/mod10_counter/cnt_Madd__add0000__and0000  1     2     
+mod60_counter/mod10_counter/cnt_Madd__add0000__and0001  1     2     
+mod60_counter/mod10_counter/cnt__add0000<1>             2     2     
+mod60_counter/mod10_counter/cnt__add0000<2>             2     2     
+mod60_counter/mod10_counter/cnt__add0000<3>             2     2     
+mod60_counter/mod10_counter/tc1                         1     2     
+mod60_counter/mod10_counter/tc4                         1     2     
+mod60_counter/mod10_tc                                  1     2     
+mod60_counter/mod60_out<0>                              4     5     
+mod60_counter/mod60_out<1>                              4     5     
+mod60_counter/mod60_out<2>                              4     5     
+mod60_counter/mod60_out<3>                              4     5     
+mod60_counter/mod60_out<4>                              4     5     
+mod60_counter/mod60_out<5>                              4     5     
+mod60_counter/mod60_out<6>                              4     5     
+mod60_counter/mod60_out<7>                              4     5     
+mod60_counter/mod6_clk                                  3     4     
+mod60_counter/mod6_counter/cnt_Madd__add0000__and0000   1     2     
+mod60_counter/mod6_counter/cnt_Madd__add0000__and0001   1     2     
+mod60_counter/mod6_counter/cnt__add0000<1>              2     2     
+mod60_counter/mod6_counter/cnt__add0000<2>              2     2     
+mod60_counter/mod6_counter/cnt__add0000<3>              2     2     
+mod60_counter/mod6_counter/tc1                          1     2     
+mod60_counter/mod6_counter/tc4                          1     2     
+mod60_counter/mod6_tc                                   1     2     
+
+** 3 Inputs **
+
+Signal                                                  I/O      User
+Name                                                    STD      Assignment
+ce                                                      LVCMOS18 
+clk                                                     LVCMOS18 T9
+reset                                                   LVCMOS18 L14
+
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+seg(3) <= '0';
+
+
+seg(7) <= '1';
+
+********** UnMapped Logic **********
+
+** Outputs **
+
+FDCPE_anode0: FDCPE port map (anode(0),anode(1),clk_1kHz,reset,'0','1');
+
+FDCPE_anode1: FDCPE port map (anode(1),anode(2),clk_1kHz,'0',reset,'1');
+
+FDCPE_anode2: FDCPE port map (anode(2),anode(3),clk_1kHz,'0',reset,'1');
+
+FDCPE_anode3: FDCPE port map (anode(3),anode(0),clk_1kHz,'0',reset,'1');
+
+
+seg(5) <= '0';
+
+
+seg(4) <= '0';
+
+
+seg(2) <= '0';
+
+
+seg(1) <= '0';
+
+
+seg(0) <= '0';
+
+
+seg(6) <= '1';
+
+
+tc <= (mod60_counter/mod10_tc AND mod60_counter/mod6_tc);
+
+** Buried Nodes **
+
+FDCPE_clk_1kHz: FDCPE port map (clk_1kHz,NOT clk_1kHz,clk,'0',reset,frequency_div/clk1_cmp_eq0000);
+
+FDCPE_clk_1s: FDCPE port map (clk_1s,NOT clk_1s,clk,'0',reset,frequency_div/clk3_cmp_eq0000);
+
+
+frequency_div/Msub_clk1_addsub0000__or0000 <= ((frequency_div/a1(0))
+	OR (frequency_div/a1(1)));
+
+
+frequency_div/Msub_clk1_addsub0000__or0001 <= ((frequency_div/a1(2))
+	OR (frequency_div/Msub_clk1_addsub0000__or0000));
+
+
+frequency_div/Msub_clk1_addsub0000__or0002 <= ((frequency_div/a1(3))
+	OR (frequency_div/Msub_clk1_addsub0000__or0001));
+
+
+frequency_div/Msub_clk1_addsub0000__or0003 <= ((frequency_div/a1(4))
+	OR (frequency_div/Msub_clk1_addsub0000__or0002));
+
+
+frequency_div/Msub_clk1_addsub0000__or0004 <= ((frequency_div/a1(5))
+	OR (frequency_div/Msub_clk1_addsub0000__or0003));
+
+
+frequency_div/Msub_clk1_addsub0000__or0005 <= ((frequency_div/a1(6))
+	OR (frequency_div/Msub_clk1_addsub0000__or0004));
+
+
+frequency_div/Msub_clk1_addsub0000__or0006 <= ((frequency_div/a1(7))
+	OR (frequency_div/Msub_clk1_addsub0000__or0005));
+
+
+frequency_div/Msub_clk1_addsub0000__or0007 <= ((frequency_div/a1(8))
+	OR (frequency_div/Msub_clk1_addsub0000__or0006));
+
+
+frequency_div/Msub_clk1_addsub0000__or0008 <= ((frequency_div/a1(9))
+	OR (frequency_div/Msub_clk1_addsub0000__or0007));
+
+
+frequency_div/Msub_clk1_addsub0000__or0009 <= ((frequency_div/a1(10))
+	OR (frequency_div/Msub_clk1_addsub0000__or0008));
+
+
+frequency_div/Msub_clk3_addsub0000__or0000 <= ((frequency_div/a3(0))
+	OR (frequency_div/a3(1)));
+
+
+frequency_div/Msub_clk3_addsub0000__or0001 <= ((frequency_div/a3(2))
+	OR (frequency_div/Msub_clk3_addsub0000__or0000));
+
+
+frequency_div/Msub_clk3_addsub0000__or0002 <= ((frequency_div/a3(3))
+	OR (frequency_div/Msub_clk3_addsub0000__or0001));
+
+
+frequency_div/Msub_clk3_addsub0000__or0003 <= ((frequency_div/a3(4))
+	OR (frequency_div/Msub_clk3_addsub0000__or0002));
+
+
+frequency_div/Msub_clk3_addsub0000__or0004 <= ((frequency_div/a3(5))
+	OR (frequency_div/Msub_clk3_addsub0000__or0003));
+
+
+frequency_div/Msub_clk3_addsub0000__or0005 <= ((frequency_div/a3(6))
+	OR (frequency_div/Msub_clk3_addsub0000__or0004));
+
+
+frequency_div/Msub_clk3_addsub0000__or0006 <= ((frequency_div/a3(7))
+	OR (frequency_div/Msub_clk3_addsub0000__or0005));
+
+
+frequency_div/Msub_clk3_addsub0000__or0007 <= ((frequency_div/a3(8))
+	OR (frequency_div/Msub_clk3_addsub0000__or0006));
+
+
+frequency_div/Msub_clk3_addsub0000__or0008 <= ((frequency_div/a3(9))
+	OR (frequency_div/Msub_clk3_addsub0000__or0007));
+
+
+frequency_div/Msub_clk3_addsub0000__or0009 <= ((frequency_div/a3(10))
+	OR (frequency_div/Msub_clk3_addsub0000__or0008));
+
+
+frequency_div/Msub_clk3_addsub0000__or0010 <= ((frequency_div/a3(11))
+	OR (frequency_div/Msub_clk3_addsub0000__or0009));
+
+
+frequency_div/Msub_clk3_addsub0000__or0011 <= ((frequency_div/a3(12))
+	OR (frequency_div/Msub_clk3_addsub0000__or0010));
+
+
+frequency_div/Msub_clk3_addsub0000__or0012 <= ((frequency_div/a3(13))
+	OR (frequency_div/Msub_clk3_addsub0000__or0011));
+
+
+frequency_div/Msub_clk3_addsub0000__or0013 <= ((frequency_div/a3(14))
+	OR (frequency_div/Msub_clk3_addsub0000__or0012));
+
+
+frequency_div/Msub_clk3_addsub0000__or0014 <= ((frequency_div/a3(15))
+	OR (frequency_div/Msub_clk3_addsub0000__or0013));
+
+
+frequency_div/Msub_clk3_addsub0000__or0015 <= ((frequency_div/a3(16))
+	OR (frequency_div/Msub_clk3_addsub0000__or0014));
+
+
+frequency_div/Msub_clk3_addsub0000__or0016 <= ((frequency_div/a3(17))
+	OR (frequency_div/Msub_clk3_addsub0000__or0015));
+
+
+frequency_div/Msub_clk3_addsub0000__or0017 <= ((frequency_div/a3(18))
+	OR (frequency_div/Msub_clk3_addsub0000__or0016));
+
+
+frequency_div/Msub_clk3_addsub0000__or0018 <= ((frequency_div/a3(19))
+	OR (frequency_div/Msub_clk3_addsub0000__or0017));
+
+
+frequency_div/Msub_clk3_addsub0000__or0019 <= ((frequency_div/a3(20))
+	OR (frequency_div/Msub_clk3_addsub0000__or0018));
+
+
+frequency_div/Msub_clk3_addsub0000__or0020 <= ((frequency_div/a3(21))
+	OR (frequency_div/Msub_clk3_addsub0000__or0019));
+
+
+frequency_div/Msub_clk3_addsub0000__or0021 <= ((frequency_div/a3(22))
+	OR (frequency_div/Msub_clk3_addsub0000__or0020));
+
+
+frequency_div/Msub_clk3_addsub0000__or0022 <= ((frequency_div/a3(23))
+	OR (frequency_div/Msub_clk3_addsub0000__or0021));
+
+
+frequency_div/Msub_clk3_addsub0000__or0023 <= ((frequency_div/a3(24))
+	OR (frequency_div/Msub_clk3_addsub0000__or0022));
+
+
+frequency_div/Msub_clk3_addsub0000__or0024 <= ((frequency_div/a3(25))
+	OR (frequency_div/Msub_clk3_addsub0000__or0023));
+
+
+frequency_div/Msub_clk3_addsub0000__or0025 <= ((frequency_div/a3(26))
+	OR (frequency_div/Msub_clk3_addsub0000__or0024));
+
+FDCPE_frequency_div/a10: FDCPE port map (frequency_div/a1(0),frequency_div/a1_D(0),clk,reset,'0','1');
+frequency_div/a1_D(0) <= (NOT frequency_div/a1(0) AND 
+	NOT frequency_div/clk1_cmp_eq0000);
+
+FDCPE_frequency_div/a11: FDCPE port map (frequency_div/a1(1),frequency_div/a1_D(1),clk,reset,'0','1');
+frequency_div/a1_D(1) <= (NOT frequency_div/clk1_cmp_eq0000 AND 
+	frequency_div/clk1_addsub0000(1));
+
+FDCPE_frequency_div/a12: FDCPE port map (frequency_div/a1(2),frequency_div/a1_D(2),clk,reset,'0','1');
+frequency_div/a1_D(2) <= (NOT frequency_div/clk1_cmp_eq0000 AND 
+	frequency_div/clk1_addsub0000(2));
+
+FDCPE_frequency_div/a13: FDCPE port map (frequency_div/a1(3),frequency_div/a1_D(3),clk,reset,'0','1');
+frequency_div/a1_D(3) <= (NOT frequency_div/clk1_cmp_eq0000 AND 
+	frequency_div/clk1_addsub0000(3));
+
+FDCPE_frequency_div/a14: FDCPE port map (frequency_div/a1(4),frequency_div/a1_D(4),clk,reset,'0','1');
+frequency_div/a1_D(4) <= (NOT frequency_div/clk1_cmp_eq0000 AND 
+	frequency_div/clk1_addsub0000(4));
+
+FDCPE_frequency_div/a15: FDCPE port map (frequency_div/a1(5),frequency_div/a1_D(5),clk,'0',reset,'1');
+frequency_div/a1_D(5) <= ((frequency_div/clk1_cmp_eq0000)
+	OR (frequency_div/clk1_addsub0000(5)));
+
+FDCPE_frequency_div/a16: FDCPE port map (frequency_div/a1(6),frequency_div/a1_D(6),clk,reset,'0','1');
+frequency_div/a1_D(6) <= (NOT frequency_div/clk1_cmp_eq0000 AND 
+	frequency_div/clk1_addsub0000(6));
+
+FDCPE_frequency_div/a17: FDCPE port map (frequency_div/a1(7),frequency_div/a1_D(7),clk,'0',reset,'1');
+frequency_div/a1_D(7) <= ((frequency_div/clk1_cmp_eq0000)
+	OR (frequency_div/clk1_addsub0000(7)));
+
+FDCPE_frequency_div/a18: FDCPE port map (frequency_div/a1(8),frequency_div/a1_D(8),clk,'0',reset,'1');
+frequency_div/a1_D(8) <= ((frequency_div/clk1_cmp_eq0000)
+	OR (frequency_div/clk1_addsub0000(8)));
+
+FDCPE_frequency_div/a19: FDCPE port map (frequency_div/a1(9),frequency_div/a1_D(9),clk,'0',reset,'1');
+frequency_div/a1_D(9) <= ((frequency_div/clk1_cmp_eq0000)
+	OR (frequency_div/clk1_addsub0000(9)));
+
+FDCPE_frequency_div/a110: FDCPE port map (frequency_div/a1(10),frequency_div/a1_D(10),clk,'0',reset,'1');
+frequency_div/a1_D(10) <= ((frequency_div/clk1_cmp_eq0000)
+	OR (frequency_div/clk1_addsub0000(10)));
+
+FDCPE_frequency_div/a111: FDCPE port map (frequency_div/a1(11),frequency_div/a1_D(11),clk,'0',reset,'1');
+frequency_div/a1_D(11) <= ((frequency_div/clk1_cmp_eq0000)
+	OR (frequency_div/clk1_addsub0000(11)));
+
+FDCPE_frequency_div/a30: FDCPE port map (frequency_div/a3(0),frequency_div/a3_D(0),clk,reset,'0','1');
+frequency_div/a3_D(0) <= (NOT frequency_div/a3(0) AND 
+	NOT frequency_div/clk3_cmp_eq0000);
+
+FDCPE_frequency_div/a31: FDCPE port map (frequency_div/a3(1),frequency_div/a3_D(1),clk,reset,'0','1');
+frequency_div/a3_D(1) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(1));
+
+FDCPE_frequency_div/a32: FDCPE port map (frequency_div/a3(2),frequency_div/a3_D(2),clk,reset,'0','1');
+frequency_div/a3_D(2) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(2));
+
+FDCPE_frequency_div/a33: FDCPE port map (frequency_div/a3(3),frequency_div/a3_D(3),clk,reset,'0','1');
+frequency_div/a3_D(3) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(3));
+
+FDCPE_frequency_div/a34: FDCPE port map (frequency_div/a3(4),frequency_div/a3_D(4),clk,reset,'0','1');
+frequency_div/a3_D(4) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(4));
+
+FDCPE_frequency_div/a35: FDCPE port map (frequency_div/a3(5),frequency_div/a3_D(5),clk,reset,'0','1');
+frequency_div/a3_D(5) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(5));
+
+FDCPE_frequency_div/a36: FDCPE port map (frequency_div/a3(6),frequency_div/a3_D(6),clk,reset,'0','1');
+frequency_div/a3_D(6) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(6));
+
+FDCPE_frequency_div/a37: FDCPE port map (frequency_div/a3(7),frequency_div/a3_D(7),clk,reset,'0','1');
+frequency_div/a3_D(7) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(7));
+
+FDCPE_frequency_div/a38: FDCPE port map (frequency_div/a3(8),frequency_div/a3_D(8),clk,'0',reset,'1');
+frequency_div/a3_D(8) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(8));
+
+FDCPE_frequency_div/a39: FDCPE port map (frequency_div/a3(9),frequency_div/a3_D(9),clk,reset,'0','1');
+frequency_div/a3_D(9) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(9));
+
+FDCPE_frequency_div/a310: FDCPE port map (frequency_div/a3(10),frequency_div/a3_D(10),clk,reset,'0','1');
+frequency_div/a3_D(10) <= ((frequency_div/clk3_cmp_eq0000)
+	OR (frequency_div/clk3_addsub0000(10)));
+
+FDCPE_frequency_div/a311: FDCPE port map (frequency_div/a3(11),frequency_div/a3_D(11),clk,'0',reset,'1');
+frequency_div/a3_D(11) <= ((frequency_div/clk3_cmp_eq0000)
+	OR (frequency_div/clk3_addsub0000(11)));
+
+FDCPE_frequency_div/a312: FDCPE port map (frequency_div/a3(12),frequency_div/a3_D(12),clk,reset,'0','1');
+frequency_div/a3_D(12) <= ((frequency_div/clk3_cmp_eq0000)
+	OR (frequency_div/clk3_addsub0000(12)));
+
+FDCPE_frequency_div/a313: FDCPE port map (frequency_div/a3(13),frequency_div/a3_D(13),clk,reset,'0','1');
+frequency_div/a3_D(13) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(13));
+
+FDCPE_frequency_div/a314: FDCPE port map (frequency_div/a3(14),frequency_div/a3_D(14),clk,reset,'0','1');
+frequency_div/a3_D(14) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(14));
+
+FDCPE_frequency_div/a315: FDCPE port map (frequency_div/a3(15),frequency_div/a3_D(15),clk,reset,'0','1');
+frequency_div/a3_D(15) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(15));
+
+FDCPE_frequency_div/a316: FDCPE port map (frequency_div/a3(16),frequency_div/a3_D(16),clk,'0',reset,'1');
+frequency_div/a3_D(16) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(16));
+
+FDCPE_frequency_div/a317: FDCPE port map (frequency_div/a3(17),frequency_div/a3_D(17),clk,reset,'0','1');
+frequency_div/a3_D(17) <= ((frequency_div/clk3_cmp_eq0000)
+	OR (frequency_div/clk3_addsub0000(17)));
+
+FDCPE_frequency_div/a318: FDCPE port map (frequency_div/a3(18),frequency_div/a3_D(18),clk,'0',reset,'1');
+frequency_div/a3_D(18) <= ((frequency_div/clk3_cmp_eq0000)
+	OR (frequency_div/clk3_addsub0000(18)));
+
+FDCPE_frequency_div/a319: FDCPE port map (frequency_div/a3(19),frequency_div/a3_D(19),clk,'0',reset,'1');
+frequency_div/a3_D(19) <= ((frequency_div/clk3_cmp_eq0000)
+	OR (frequency_div/clk3_addsub0000(19)));
+
+FDCPE_frequency_div/a320: FDCPE port map (frequency_div/a3(20),frequency_div/a3_D(20),clk,'0',reset,'1');
+frequency_div/a3_D(20) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(20));
+
+FDCPE_frequency_div/a321: FDCPE port map (frequency_div/a3(21),frequency_div/a3_D(21),clk,'0',reset,'1');
+frequency_div/a3_D(21) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(21));
+
+FDCPE_frequency_div/a322: FDCPE port map (frequency_div/a3(22),frequency_div/a3_D(22),clk,reset,'0','1');
+frequency_div/a3_D(22) <= ((frequency_div/clk3_cmp_eq0000)
+	OR (frequency_div/clk3_addsub0000(22)));
+
+FDCPE_frequency_div/a323: FDCPE port map (frequency_div/a3(23),frequency_div/a3_D(23),clk,reset,'0','1');
+frequency_div/a3_D(23) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(23));
+
+FDCPE_frequency_div/a324: FDCPE port map (frequency_div/a3(24),frequency_div/a3_D(24),clk,reset,'0','1');
+frequency_div/a3_D(24) <= (NOT frequency_div/clk3_cmp_eq0000 AND 
+	frequency_div/clk3_addsub0000(24));
+
+FDCPE_frequency_div/a325: FDCPE port map (frequency_div/a3(25),frequency_div/a3_D(25),clk,reset,'0','1');
+frequency_div/a3_D(25) <= ((frequency_div/clk3_cmp_eq0000)
+	OR (frequency_div/clk3_addsub0000(25)));
+
+FDCPE_frequency_div/a326: FDCPE port map (frequency_div/a3(26),frequency_div/a3_D(26),clk,reset,'0','1');
+frequency_div/a3_D(26) <= ((frequency_div/clk3_cmp_eq0000)
+	OR (frequency_div/clk3_addsub0000(26)));
+
+FDCPE_frequency_div/a327: FDCPE port map (frequency_div/a3(27),frequency_div/a3_D(27),clk,reset,'0','1');
+frequency_div/a3_D(27) <= ((frequency_div/clk3_cmp_eq0000)
+	OR (frequency_div/clk3_addsub0000(27)));
+
+
+frequency_div/clk1_addsub0000(1) <= NOT frequency_div/a1(1)
+	XOR frequency_div/a1(0);
+
+
+frequency_div/clk1_addsub0000(2) <= NOT frequency_div/a1(2)
+	XOR frequency_div/Msub_clk1_addsub0000__or0000;
+
+
+frequency_div/clk1_addsub0000(3) <= NOT frequency_div/a1(3)
+	XOR frequency_div/Msub_clk1_addsub0000__or0001;
+
+
+frequency_div/clk1_addsub0000(4) <= NOT frequency_div/a1(4)
+	XOR frequency_div/Msub_clk1_addsub0000__or0002;
+
+
+frequency_div/clk1_addsub0000(5) <= NOT frequency_div/a1(5)
+	XOR frequency_div/Msub_clk1_addsub0000__or0003;
+
+
+frequency_div/clk1_addsub0000(6) <= NOT frequency_div/a1(6)
+	XOR frequency_div/Msub_clk1_addsub0000__or0004;
+
+
+frequency_div/clk1_addsub0000(7) <= NOT frequency_div/a1(7)
+	XOR frequency_div/Msub_clk1_addsub0000__or0005;
+
+
+frequency_div/clk1_addsub0000(8) <= NOT frequency_div/a1(8)
+	XOR frequency_div/Msub_clk1_addsub0000__or0006;
+
+
+frequency_div/clk1_addsub0000(9) <= NOT frequency_div/a1(9)
+	XOR frequency_div/Msub_clk1_addsub0000__or0007;
+
+
+frequency_div/clk1_addsub0000(10) <= NOT frequency_div/a1(10)
+	XOR frequency_div/Msub_clk1_addsub0000__or0008;
+
+
+frequency_div/clk1_addsub0000(11) <= NOT frequency_div/a1(11)
+	XOR frequency_div/Msub_clk1_addsub0000__or0009;
+
+
+frequency_div/clk1_cmp_eq0000 <= (frequency_div/clk1_cmp_eq000012 AND 
+	frequency_div/clk1_cmp_eq000013);
+
+
+frequency_div/clk1_cmp_eq000012 <= (frequency_div/a1(0) AND 
+	NOT frequency_div/clk1_addsub0000(1) AND NOT frequency_div/clk1_addsub0000(2) AND 
+	NOT frequency_div/clk1_addsub0000(3) AND NOT frequency_div/clk1_addsub0000(4) AND 
+	NOT frequency_div/clk1_addsub0000(5) AND NOT frequency_div/clk1_addsub0000(6) AND 
+	NOT frequency_div/clk1_addsub0000(7));
+
+
+frequency_div/clk1_cmp_eq000013 <= (NOT frequency_div/clk1_addsub0000(10) AND 
+	NOT frequency_div/clk1_addsub0000(11) AND NOT frequency_div/clk1_addsub0000(8) AND 
+	NOT frequency_div/clk1_addsub0000(9));
+
+
+frequency_div/clk3_addsub0000(1) <= NOT frequency_div/a3(1)
+	XOR frequency_div/a3(0);
+
+
+frequency_div/clk3_addsub0000(2) <= NOT frequency_div/a3(2)
+	XOR frequency_div/Msub_clk3_addsub0000__or0000;
+
+
+frequency_div/clk3_addsub0000(3) <= NOT frequency_div/a3(3)
+	XOR frequency_div/Msub_clk3_addsub0000__or0001;
+
+
+frequency_div/clk3_addsub0000(4) <= NOT frequency_div/a3(4)
+	XOR frequency_div/Msub_clk3_addsub0000__or0002;
+
+
+frequency_div/clk3_addsub0000(5) <= NOT frequency_div/a3(5)
+	XOR frequency_div/Msub_clk3_addsub0000__or0003;
+
+
+frequency_div/clk3_addsub0000(6) <= NOT frequency_div/a3(6)
+	XOR frequency_div/Msub_clk3_addsub0000__or0004;
+
+
+frequency_div/clk3_addsub0000(7) <= NOT frequency_div/a3(7)
+	XOR frequency_div/Msub_clk3_addsub0000__or0005;
+
+
+frequency_div/clk3_addsub0000(8) <= NOT frequency_div/a3(8)
+	XOR frequency_div/Msub_clk3_addsub0000__or0006;
+
+
+frequency_div/clk3_addsub0000(9) <= NOT frequency_div/a3(9)
+	XOR frequency_div/Msub_clk3_addsub0000__or0007;
+
+
+frequency_div/clk3_addsub0000(10) <= NOT frequency_div/a3(10)
+	XOR frequency_div/Msub_clk3_addsub0000__or0008;
+
+
+frequency_div/clk3_addsub0000(11) <= NOT frequency_div/a3(11)
+	XOR frequency_div/Msub_clk3_addsub0000__or0009;
+
+
+frequency_div/clk3_addsub0000(12) <= NOT frequency_div/a3(12)
+	XOR frequency_div/Msub_clk3_addsub0000__or0010;
+
+
+frequency_div/clk3_addsub0000(13) <= NOT frequency_div/a3(13)
+	XOR frequency_div/Msub_clk3_addsub0000__or0011;
+
+
+frequency_div/clk3_addsub0000(14) <= NOT frequency_div/a3(14)
+	XOR frequency_div/Msub_clk3_addsub0000__or0012;
+
+
+frequency_div/clk3_addsub0000(15) <= NOT frequency_div/a3(15)
+	XOR frequency_div/Msub_clk3_addsub0000__or0013;
+
+
+frequency_div/clk3_addsub0000(16) <= NOT frequency_div/a3(16)
+	XOR frequency_div/Msub_clk3_addsub0000__or0014;
+
+
+frequency_div/clk3_addsub0000(17) <= NOT frequency_div/a3(17)
+	XOR frequency_div/Msub_clk3_addsub0000__or0015;
+
+
+frequency_div/clk3_addsub0000(18) <= NOT frequency_div/a3(18)
+	XOR frequency_div/Msub_clk3_addsub0000__or0016;
+
+
+frequency_div/clk3_addsub0000(19) <= NOT frequency_div/a3(19)
+	XOR frequency_div/Msub_clk3_addsub0000__or0017;
+
+
+frequency_div/clk3_addsub0000(20) <= NOT frequency_div/a3(20)
+	XOR frequency_div/Msub_clk3_addsub0000__or0018;
+
+
+frequency_div/clk3_addsub0000(21) <= NOT frequency_div/a3(21)
+	XOR frequency_div/Msub_clk3_addsub0000__or0019;
+
+
+frequency_div/clk3_addsub0000(22) <= NOT frequency_div/a3(22)
+	XOR frequency_div/Msub_clk3_addsub0000__or0020;
+
+
+frequency_div/clk3_addsub0000(23) <= NOT frequency_div/a3(23)
+	XOR frequency_div/Msub_clk3_addsub0000__or0021;
+
+
+frequency_div/clk3_addsub0000(24) <= NOT frequency_div/a3(24)
+	XOR frequency_div/Msub_clk3_addsub0000__or0022;
+
+
+frequency_div/clk3_addsub0000(25) <= NOT frequency_div/a3(25)
+	XOR frequency_div/Msub_clk3_addsub0000__or0023;
+
+
+frequency_div/clk3_addsub0000(26) <= NOT frequency_div/a3(26)
+	XOR frequency_div/Msub_clk3_addsub0000__or0024;
+
+
+frequency_div/clk3_addsub0000(27) <= NOT frequency_div/a3(27)
+	XOR frequency_div/Msub_clk3_addsub0000__or0025;
+
+
+frequency_div/clk3_cmp_eq0000 <= (frequency_div/clk3_cmp_eq000028 AND 
+	frequency_div/clk3_cmp_eq000029 AND frequency_div/clk3_cmp_eq000030 AND 
+	frequency_div/clk3_cmp_eq000031);
+
+
+frequency_div/clk3_cmp_eq000028 <= (frequency_div/a3(0) AND 
+	NOT frequency_div/clk3_addsub0000(1) AND NOT frequency_div/clk3_addsub0000(2) AND 
+	NOT frequency_div/clk3_addsub0000(3) AND NOT frequency_div/clk3_addsub0000(4) AND 
+	NOT frequency_div/clk3_addsub0000(5) AND NOT frequency_div/clk3_addsub0000(6) AND 
+	NOT frequency_div/clk3_addsub0000(7));
+
+
+frequency_div/clk3_cmp_eq000029 <= (NOT frequency_div/clk3_addsub0000(10) AND 
+	NOT frequency_div/clk3_addsub0000(11) AND NOT frequency_div/clk3_addsub0000(12) AND 
+	NOT frequency_div/clk3_addsub0000(13) AND NOT frequency_div/clk3_addsub0000(14) AND 
+	NOT frequency_div/clk3_addsub0000(15) AND NOT frequency_div/clk3_addsub0000(8) AND 
+	NOT frequency_div/clk3_addsub0000(9));
+
+
+frequency_div/clk3_cmp_eq000030 <= (NOT frequency_div/clk3_addsub0000(16) AND 
+	NOT frequency_div/clk3_addsub0000(17) AND NOT frequency_div/clk3_addsub0000(18) AND 
+	NOT frequency_div/clk3_addsub0000(19) AND NOT frequency_div/clk3_addsub0000(20) AND 
+	NOT frequency_div/clk3_addsub0000(21) AND NOT frequency_div/clk3_addsub0000(22) AND 
+	NOT frequency_div/clk3_addsub0000(23));
+
+
+frequency_div/clk3_cmp_eq000031 <= (NOT frequency_div/clk3_addsub0000(24) AND 
+	NOT frequency_div/clk3_addsub0000(25) AND NOT frequency_div/clk3_addsub0000(26) AND 
+	NOT frequency_div/clk3_addsub0000(27));
+
+
+mod60_counter/mod10_counter/cnt_Madd__add0000__and0000 <= (mod60_counter/mod60_out(0) AND 
+	mod60_counter/mod60_out(1));
+
+
+mod60_counter/mod10_counter/cnt_Madd__add0000__and0001 <= (mod60_counter/mod60_out(2) AND 
+	mod60_counter/mod10_counter/cnt_Madd__add0000__and0000);
+
+
+mod60_counter/mod10_counter/cnt__add0000(1) <= mod60_counter/mod60_out(1)
+	XOR mod60_counter/mod60_out(0);
+
+
+mod60_counter/mod10_counter/cnt__add0000(2) <= mod60_counter/mod60_out(2)
+	XOR mod60_counter/mod10_counter/cnt_Madd__add0000__and0000;
+
+
+mod60_counter/mod10_counter/cnt__add0000(3) <= mod60_counter/mod60_out(3)
+	XOR mod60_counter/mod10_counter/cnt_Madd__add0000__and0001;
+
+
+mod60_counter/mod10_counter/tc1 <= (mod60_counter/mod60_out(0) AND 
+	mod60_counter/mod60_out(3));
+
+
+mod60_counter/mod10_counter/tc4 <= (NOT mod60_counter/mod60_out(1) AND 
+	NOT mod60_counter/mod60_out(2));
+
+
+mod60_counter/mod10_tc <= (mod60_counter/mod10_counter/tc1 AND 
+	mod60_counter/mod10_counter/tc4);
+
+FDCPE_mod60_counter/mod60_out0: FDCPE port map (mod60_counter/mod60_out(0),mod60_counter/mod60_out_D(0),clk_1s,reset,'0',ce);
+mod60_counter/mod60_out_D(0) <= (NOT mod60_counter/mod10_tc AND 
+	NOT mod60_counter/mod60_out(0));
+
+FDCPE_mod60_counter/mod60_out1: FDCPE port map (mod60_counter/mod60_out(1),mod60_counter/mod60_out_D(1),clk_1s,reset,'0',ce);
+mod60_counter/mod60_out_D(1) <= (NOT mod60_counter/mod10_tc AND 
+	mod60_counter/mod10_counter/cnt__add0000(1));
+
+FDCPE_mod60_counter/mod60_out2: FDCPE port map (mod60_counter/mod60_out(2),mod60_counter/mod60_out_D(2),clk_1s,reset,'0',ce);
+mod60_counter/mod60_out_D(2) <= (NOT mod60_counter/mod10_tc AND 
+	mod60_counter/mod10_counter/cnt__add0000(2));
+
+FDCPE_mod60_counter/mod60_out3: FDCPE port map (mod60_counter/mod60_out(3),mod60_counter/mod60_out_D(3),clk_1s,reset,'0',ce);
+mod60_counter/mod60_out_D(3) <= (NOT mod60_counter/mod10_tc AND 
+	mod60_counter/mod10_counter/cnt__add0000(3));
+
+FDCPE_mod60_counter/mod60_out4: FDCPE port map (mod60_counter/mod60_out(4),mod60_counter/mod60_out_D(4),mod60_counter/mod6_clk,reset,'0',ce);
+mod60_counter/mod60_out_D(4) <= (NOT mod60_counter/mod60_out(4) AND 
+	NOT mod60_counter/mod6_tc);
+
+FDCPE_mod60_counter/mod60_out5: FDCPE port map (mod60_counter/mod60_out(5),mod60_counter/mod60_out_D(5),mod60_counter/mod6_clk,reset,'0',ce);
+mod60_counter/mod60_out_D(5) <= (mod60_counter/mod6_counter/cnt__add0000(1) AND 
+	NOT mod60_counter/mod6_tc);
+
+FDCPE_mod60_counter/mod60_out6: FDCPE port map (mod60_counter/mod60_out(6),mod60_counter/mod60_out_D(6),mod60_counter/mod6_clk,reset,'0',ce);
+mod60_counter/mod60_out_D(6) <= (mod60_counter/mod6_counter/cnt__add0000(2) AND 
+	NOT mod60_counter/mod6_tc);
+
+FDCPE_mod60_counter/mod60_out7: FDCPE port map (mod60_counter/mod60_out(7),mod60_counter/mod60_out_D(7),mod60_counter/mod6_clk,reset,'0',ce);
+mod60_counter/mod60_out_D(7) <= (mod60_counter/mod6_counter/cnt__add0000(3) AND 
+	NOT mod60_counter/mod6_tc);
+
+FDCPE_mod60_counter/mod6_clk: FDCPE port map (mod60_counter/mod6_clk,mod60_counter/mod6_clk_D,clk_1s,reset,'0','1');
+mod60_counter/mod6_clk_D <= (mod60_counter/mod10_counter/tc1 AND 
+	mod60_counter/mod10_counter/tc4);
+
+
+mod60_counter/mod6_counter/cnt_Madd__add0000__and0000 <= (mod60_counter/mod60_out(4) AND 
+	mod60_counter/mod60_out(5));
+
+
+mod60_counter/mod6_counter/cnt_Madd__add0000__and0001 <= (mod60_counter/mod60_out(6) AND 
+	mod60_counter/mod6_counter/cnt_Madd__add0000__and0000);
+
+
+mod60_counter/mod6_counter/cnt__add0000(1) <= mod60_counter/mod60_out(5)
+	XOR mod60_counter/mod60_out(4);
+
+
+mod60_counter/mod6_counter/cnt__add0000(2) <= mod60_counter/mod60_out(6)
+	XOR mod60_counter/mod6_counter/cnt_Madd__add0000__and0000;
+
+
+mod60_counter/mod6_counter/cnt__add0000(3) <= mod60_counter/mod60_out(7)
+	XOR mod60_counter/mod6_counter/cnt_Madd__add0000__and0001;
+
+
+mod60_counter/mod6_counter/tc1 <= (mod60_counter/mod60_out(4) AND 
+	mod60_counter/mod60_out(6));
+
+
+mod60_counter/mod6_counter/tc4 <= (NOT mod60_counter/mod60_out(5) AND 
+	NOT mod60_counter/mod60_out(7));
+
+
+mod60_counter/mod6_tc <= (mod60_counter/mod6_counter/tc1 AND 
+	mod60_counter/mod6_counter/tc4);
+
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FDDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ FTDCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc2c256-6-TQ144
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Set Unused I/O Pin Termination              : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Enable Input Registers                      : ON
+Function Block Fan-in Limit                 : 38
+Use DATA_GATE Attribute                     : ON
+Set Tristate Outputs to Termination Mode    : KEEPER
+Default Voltage Standard for All Outputs    : LVCMOS18
+Input Limit                                 : 32
+Pterm Limit                                 : 28

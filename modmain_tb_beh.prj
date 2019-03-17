@@ -1,0 +1,7 @@
+vhdl work "mod6_counter.vhd"
+vhdl work "mod10_counter.vhd"
+vhdl work "DFF.vhd"
+vhdl work "mod60_counter.vhd"
+vhdl work "mod12_counter.vhd"
+vhdl work "counter_main.vhd"
+vhdl work "modmain_tb.vhd"

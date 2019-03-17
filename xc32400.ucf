@@ -1,0 +1,17 @@
+NET "clk"     LOC = "T9";
+NET "reset"   LOC = "K13";
+NET "ce"      LOC = "K14";
+
+NET "anode<0>"  LOC = "E13";
+NET "anode<1>"  LOC = "F14";
+NET "anode<2>"  LOC = "G14";
+NET "anode<3>"  LOC = "D14";
+
+
+NET "seg<0>"    LOC = "E14";
+NET "seg<1>"    LOC = "G13";
+NET "seg<2>"    LOC = "N15";
+NET "seg<3>"    LOC = "P15";
+NET "seg<4>"    LOC = "R16";
+NET "seg<5>"    LOC = "F13";
+NET "seg<6>"    LOC = "N16";

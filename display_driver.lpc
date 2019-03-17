@@ -1,0 +1,24 @@
+# display_driver.lpc  
+#   The constraints in this file were created simply to be viewed.  
+#   If you wish to use these constraints, please copy them into your  
+#   project's constraint file. If you do not have a project constraints  
+#   file yet, please use the "Project->New Source" menu to create one.
+
+
+
+#pin2ucf - Sun Mar 10 16:46:19 2019
+#The following constraints were newly added
+NET "seg<0>" LOC = E14;
+NET "clk" LOC = T9;
+NET "seg<1>" LOC = G13;
+NET "anode<0>" LOC = E13;
+NET "seg<2>" LOC = N15;
+NET "anode<1>" LOC = F14;
+NET "seg<3>" LOC = P15;
+NET "anode<2>" LOC = G14;
+NET "seg<4>" LOC = R16;
+NET "anode<3>" LOC = D14;
+NET "seg<5>" LOC = F13;
+NET "seg<6>" LOC = N16;
+NET "seg<7>" LOC = P16;
+NET "reset" LOC = K13;

@@ -1,0 +1,7 @@
+[Inputs]
+clk
+reset
+[Outputs]
+=seg[7:0]=
+[BiDir]
+=anode[3:0]=

@@ -1,0 +1,6 @@
+vhdl work "D:\Xilinx Projects\test_display\test_display\mod6_counter.vhd"
+vhdl work "D:\Xilinx Projects\test_display\test_display\mod10_counter.vhd"
+vhdl work "D:\Xilinx Projects\test_display\test_display\DFF.vhd"
+vhdl work "D:\Xilinx Projects\test_display\test_display\mod60_counter.vhd"
+vhdl work "D:\Xilinx Projects\test_display\test_display\mod12_counter.vhd"
+vhdl work "D:\Xilinx Projects\test_display\test_display\counter_main.vhd"

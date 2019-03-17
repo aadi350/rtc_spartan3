@@ -1,0 +1,1 @@
+vhdtdtfi -prj test_display -o "D:/Xilinx Projects/test_display/test_display/timer_base.vhi" -module timer_base -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work timer_base.vhd 

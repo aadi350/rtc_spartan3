@@ -1,0 +1,552 @@
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+taengine -intstyle ise -f display_driver -w --format html1 -l display_driver_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+taengine -intstyle ise -f display_driver -w --format html1 -l display_driver_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+taengine -intstyle ise -f display_driver -w --format html1 -l display_driver_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+vhdtdtfi -lib work mod6_counter.vhd -lib work mod10_counter.vhd -lib work mod60_counter.vhd -lib work freq_divider.vhd -lib work display_multiplexer.vhd -lib work display_driver.vhd -prj test_display -o display_driver.spl -module display_driver -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr display_driver.spl {D:/Xilinx Projects/test_display/test_display/display_driver.sym} 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+taengine -intstyle ise -f display_driver -w --format html1 -l display_driver_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc256_ucf.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+hprep6 -s IEEE1149 -i display_driver 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc xc32400.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+tsim -intstyle ise display_driver display_driver.nga 
+taengine -intstyle ise -f display_driver -w --format html1 -l display_driver_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i display_driver 
+hprep6 -s IEEE1149 -i display_driver 
+ngdbuild -intstyle ise -dd _ngo -uc xc32400.ucf -p xc2c256-TQ144-6 "display_driver.ngc" display_driver.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 display_driver.ngd 
+XSLTProcess display_driver_build.xml 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+pin2ucf -o display_driver_locked.ucf display_driver.ncd 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 
+bitgen -intstyle ise -f display_driver.ut display_driver.ncd 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx Projects/test_display/test_display/display_driver.xst" -ofn "D:/Xilinx Projects/test_display/test_display/display_driver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xc32400.ucf -p xc3s400-ft256-5 "display_driver.ngc" display_driver.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o display_driver_map.ncd display_driver.ngd display_driver.pcf 
+par -w -intstyle ise -ol high -t 1 display_driver_map.ncd display_driver.ncd display_driver.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml display_driver.twx display_driver.ncd -o display_driver.twr display_driver.pcf -ucf xc32400.ucf 

@@ -1,0 +1,41 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Xilinx Projects/test_display/test_display/count_tb_isim_beh.exe -prj D:/Xilinx Projects/test_display/test_display/count_tb_beh.prj work.count_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/mod6_counter.vhd" into library work
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/mod10_counter.vhd" into library work
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/DFF.vhd" into library work
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/year_leap.vhd" into library work
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/year_counter.vhd" into library work
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/mod60_counter.vhd" into library work
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/mod12_counter.vhd" into library work
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/merid_counter.vhd" into library work
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/counter_day.vhd" into library work
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/counter_main.vhd" into library work
+Parsing VHDL file "D:/Xilinx Projects/test_display/test_display/count_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity mod6_counter [mod6_counter_default]
+Compiling architecture behavioral of entity DFF [dff_default]
+Compiling architecture behavioral of entity mod10_counter [mod10_counter_default]
+Compiling architecture behavioral of entity mod60_counter [mod60_counter_default]
+Compiling architecture behavioral of entity mod12_counter [mod12_counter_default]
+Compiling architecture behavioral of entity merid_counter [merid_counter_default]
+Compiling architecture behavioral of entity counter_day [counter_day_default]
+Compiling architecture behavioral of entity year_counter [year_counter_default]
+Compiling architecture behavioral of entity year_leap [year_leap_default]
+Compiling architecture behavioral of entity counter_main [counter_main_default]
+Compiling architecture behavior of entity count_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 27 VHDL Units
+Built simulation executable D:/Xilinx Projects/test_display/test_display/count_tb_isim_beh.exe
+Fuse Memory Usage: 52296 KB
+Fuse CPU Usage: 827 ms

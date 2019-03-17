@@ -1,0 +1,45 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Xilinx Projects/test_display/test_display/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to D:/Xilinx Projects/test_display/test_display/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/mod6_counter.vhd" in Library work.
+Architecture behavioral of Entity mod6_counter is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/DFF.vhd" in Library work.
+Architecture behavioral of Entity dff is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/mod10_counter.vhd" in Library work.
+Architecture behavioral of Entity mod10_counter is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/mod60_counter.vhd" in Library work.
+Architecture behavioral of Entity mod60_counter is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/mod12_counter.vhd" in Library work.
+Architecture behavioral of Entity mod12_counter is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/counter_main.vhd" in Library work.
+Entity <counter_main> compiled.
+Entity <counter_main> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> 
+
+Total memory usage is 4470628 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

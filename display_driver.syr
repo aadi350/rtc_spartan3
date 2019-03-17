@@ -1,0 +1,948 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: display_driver.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "display_driver.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "display_driver"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-ft256
+
+---- Source Options
+Top Module Name                    : display_driver
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/mod6_counter.vhd" in Library work.
+Architecture behavioral of Entity mod6_counter is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/DFF.vhd" in Library work.
+Architecture behavioral of Entity dff is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/mod10_counter.vhd" in Library work.
+Architecture behavioral of Entity mod10_counter is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/mod60_counter.vhd" in Library work.
+Architecture behavioral of Entity mod60_counter is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/mod12_counter.vhd" in Library work.
+Architecture behavioral of Entity mod12_counter is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/merid_counter.vhd" in Library work.
+Architecture behavioral of Entity merid_counter is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/counter_day.vhd" in Library work.
+Architecture behavioral of Entity counter_day is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/year_counter.vhd" in Library work.
+Architecture behavioral of Entity year_counter is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/year_leap.vhd" in Library work.
+Architecture behavioral of Entity year_leap is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/freq_divider.vhd" in Library work.
+Architecture behavioral of Entity freq_divider is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/display_multiplexer.vhd" in Library work.
+Architecture behavioral of Entity display_multiplexer is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/shift_reg.vhd" in Library work.
+Architecture behavioral of Entity shift_reg is up to date.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/counter_main.vhd" in Library work.
+Entity <counter_main> compiled.
+Entity <counter_main> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Xilinx Projects/test_display/test_display/display_driver.vhd" in Library work.
+Architecture behavioral of Entity display_driver is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <display_driver> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <freq_divider> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <display_multiplexer> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <shift_reg> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <counter_main> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mod60_counter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mod12_counter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <merid_counter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <counter_day> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <year_counter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <year_leap> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mod6_counter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <DFF> in library <work> (architecture <Behavioral>) with generics.
+	INIT = '0'
+
+Analyzing hierarchy for entity <mod10_counter> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <display_driver> in library <work> (Architecture <behavioral>).
+Entity <display_driver> analyzed. Unit <display_driver> generated.
+
+Analyzing Entity <freq_divider> in library <work> (Architecture <Behavioral>).
+Entity <freq_divider> analyzed. Unit <freq_divider> generated.
+
+Analyzing Entity <display_multiplexer> in library <work> (Architecture <Behavioral>).
+Entity <display_multiplexer> analyzed. Unit <display_multiplexer> generated.
+
+Analyzing Entity <shift_reg> in library <work> (Architecture <Behavioral>).
+Entity <shift_reg> analyzed. Unit <shift_reg> generated.
+
+Analyzing Entity <counter_main> in library <work> (Architecture <Behavioral>).
+Entity <counter_main> analyzed. Unit <counter_main> generated.
+
+Analyzing Entity <mod60_counter> in library <work> (Architecture <Behavioral>).
+Entity <mod60_counter> analyzed. Unit <mod60_counter> generated.
+
+Analyzing Entity <mod6_counter> in library <work> (Architecture <Behavioral>).
+Entity <mod6_counter> analyzed. Unit <mod6_counter> generated.
+
+Analyzing generic Entity <DFF> in library <work> (Architecture <Behavioral>).
+	INIT = '0'
+Entity <DFF> analyzed. Unit <DFF> generated.
+
+Analyzing Entity <mod10_counter> in library <work> (Architecture <Behavioral>).
+Entity <mod10_counter> analyzed. Unit <mod10_counter> generated.
+
+Analyzing Entity <mod12_counter> in library <work> (Architecture <Behavioral>).
+Entity <mod12_counter> analyzed. Unit <mod12_counter> generated.
+
+Analyzing Entity <merid_counter> in library <work> (Architecture <Behavioral>).
+Entity <merid_counter> analyzed. Unit <merid_counter> generated.
+
+Analyzing Entity <counter_day> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "D:/Xilinx Projects/test_display/test_display/counter_day.vhd" line 78: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <day_L>, <day_H>
+Entity <counter_day> analyzed. Unit <counter_day> generated.
+
+Analyzing Entity <year_counter> in library <work> (Architecture <Behavioral>).
+Entity <year_counter> analyzed. Unit <year_counter> generated.
+
+Analyzing Entity <year_leap> in library <work> (Architecture <Behavioral>).
+Entity <year_leap> analyzed. Unit <year_leap> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <freq_divider>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/freq_divider.vhd".
+    Found 1-bit register for signal <clk1>.
+    Found 1-bit register for signal <clk2>.
+    Found 12-bit down counter for signal <a1>.
+    Found 26-bit down counter for signal <a2>.
+    Found 12-bit subtractor for signal <clk1$addsub0000> created at line 52.
+    Found 26-bit subtractor for signal <clk2$addsub0000> created at line 70.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <freq_divider> synthesized.
+
+
+Synthesizing Unit <display_multiplexer>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/display_multiplexer.vhd".
+WARNING:Xst:647 - Input <disp_value<19:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x7-bit ROM for signal <seg>.
+    Found 4-bit register for signal <anode>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <display_multiplexer> synthesized.
+
+
+Synthesizing Unit <shift_reg>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/shift_reg.vhd".
+WARNING:Xst:647 - Input <shift_load> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <shift_val<27:20>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 28-bit register for signal <shift_temp>.
+    Found 28-bit register for signal <shift_val>.
+    Summary:
+	inferred  56 D-type flip-flop(s).
+Unit <shift_reg> synthesized.
+
+
+Synthesizing Unit <mod12_counter>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/mod12_counter.vhd".
+    Found finite state machine <FSM_0> for signal <cnt_2>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <cnt>.
+    Found 4-bit register for signal <cnt_1>.
+    Found 4-bit adder for signal <cnt_1$addsub0000> created at line 79.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <mod12_counter> synthesized.
+
+
+Synthesizing Unit <merid_counter>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/merid_counter.vhd".
+WARNING:Xst:1780 - Signal <cnt> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_1> for signal <merid>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 3                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | ce                        (positive)           |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 1111                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <merid_counter> synthesized.
+
+
+Synthesizing Unit <counter_day>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/counter_day.vhd".
+WARNING:Xst:737 - Found 4-bit latch for signal <day_H>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <day_L>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Using one-hot encoding for signal <month>.
+    Found 4-bit adder for signal <day_L$addsub0000> created at line 107.
+    Found 4-bit register for signal <month>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <counter_day> synthesized.
+
+
+Synthesizing Unit <year_counter>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/year_counter.vhd".
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit up counter for signal <yr_0>.
+    Found 4-bit up counter for signal <yr_1>.
+    Found 4-bit up counter for signal <yr_2>.
+    Found 4-bit up counter for signal <yr_3>.
+    Summary:
+	inferred   4 Counter(s).
+Unit <year_counter> synthesized.
+
+
+Synthesizing Unit <year_leap>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/year_leap.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <year_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <year_leap> synthesized.
+
+
+Synthesizing Unit <mod6_counter>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/mod6_counter.vhd".
+    Found 4-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <mod6_counter> synthesized.
+
+
+Synthesizing Unit <DFF>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/DFF.vhd".
+    Found 1-bit register for signal <q_o>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <DFF> synthesized.
+
+
+Synthesizing Unit <mod10_counter>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/mod10_counter.vhd".
+    Found 4-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <mod10_counter> synthesized.
+
+
+Synthesizing Unit <mod60_counter>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/mod60_counter.vhd".
+Unit <mod60_counter> synthesized.
+
+
+Synthesizing Unit <counter_main>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/counter_main.vhd".
+WARNING:Xst:647 - Input <clk_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <count_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <data_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <count_day_val> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <counter_main> synthesized.
+
+
+Synthesizing Unit <display_driver>.
+    Related source file is "D:/Xilinx Projects/test_display/test_display/display_driver.vhd".
+WARNING:Xst:646 - Signal <display_value_sig> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <display_driver> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 5
+ 12-bit subtractor                                     : 1
+ 26-bit subtractor                                     : 1
+ 4-bit adder                                           : 3
+# Counters                                             : 10
+ 12-bit down counter                                   : 1
+ 26-bit down counter                                   : 1
+ 4-bit up counter                                      : 8
+# Registers                                            : 80
+ 1-bit register                                        : 76
+ 4-bit register                                        : 4
+# Latches                                              : 2
+ 4-bit latch                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <counter/counter_meridian/merid/FSM> on signal <merid[1:3]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 1111  | 001
+ 1010  | 010
+ 1011  | 100
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <counter/counter_hr/cnt_2/FSM> on signal <cnt_2[1:1]> with sequential encoding.
+Optimizing FSM <counter/counter_month/cnt_2/FSM> on signal <cnt_2[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0
+ 0001  | 1
+-------------------
+WARNING:Xst:1290 - Hierarchical block <counter_day> is unconnected in block <counter>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <counter_month> is unconnected in block <counter>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <counter_year> is unconnected in block <counter>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <leap_year> is unconnected in block <counter>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <cnt_6> in Unit <counter_hr> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_7> <cnt_5> 
+WARNING:Xst:1710 - FF/Latch <shift_temp_27> (without init value) has a constant value of 0 in block <shift_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shift_temp_26> (without init value) has a constant value of 0 in block <shift_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shift_temp_25> (without init value) has a constant value of 0 in block <shift_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cnt_6> (without init value) has a constant value of 0 in block <counter_hr>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 5
+ 12-bit subtractor                                     : 1
+ 26-bit subtractor                                     : 1
+ 4-bit adder                                           : 3
+# Counters                                             : 10
+ 12-bit down counter                                   : 1
+ 26-bit down counter                                   : 1
+ 4-bit up counter                                      : 8
+# Registers                                            : 76
+ Flip-Flops                                            : 76
+# Latches                                              : 2
+ 4-bit latch                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <cnt_7> (without init value) has a constant value of 0 in block <mod12_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_6> (without init value) has a constant value of 0 in block <mod12_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_5> (without init value) has a constant value of 0 in block <mod12_counter>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <day_H_2> in Unit <counter_day> is equivalent to the following FF/Latch, which will be removed : <day_H_3> 
+WARNING:Xst:1426 - The value init of the FF/Latch month_0 hinder the constant cleaning in the block counter_day.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <day_H_2> (without init value) has a constant value of 0 in block <counter_day>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <display_driver> ...
+
+Optimizing unit <freq_divider> ...
+
+Optimizing unit <shift_reg> ...
+
+Optimizing unit <mod12_counter> ...
+
+Optimizing unit <year_counter> ...
+
+Optimizing unit <display_multiplexer> ...
+
+Optimizing unit <counter_day> ...
+
+Optimizing unit <counter_main> ...
+WARNING:Xst:1710 - FF/Latch <shift_reg/shift_temp_26> (without init value) has a constant value of 0 in block <display_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_reg/shift_temp_27> (without init value) has a constant value of 0 in block <display_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_reg/shift_temp_25> (without init value) has a constant value of 0 in block <display_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <shift_reg/shift_val_16> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <shift_reg/shift_val_18> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <shift_reg/shift_val_19> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <shift_reg/shift_val_17> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <shift_reg/shift_temp_13> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <shift_reg/shift_temp_14> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <shift_reg/shift_temp_12> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <shift_reg/shift_temp_15> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_day/month_3> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_day/month_2> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_day/month_1> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_day/month_0> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_day/day_L_1> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_day/day_L_2> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_day/day_L_3> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_day/day_L_0> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_day/day_H_0> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_day/day_H_1> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_0_0> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_0_1> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_0_2> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_0_3> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_1_0> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_1_1> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_1_2> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_1_3> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_2_0> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_2_1> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_2_2> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_2_3> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_3_0> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_3_3> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_3_1> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_year/yr_3_2> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_month/cnt_1_0> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_month/cnt_1_1> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_month/cnt_1_2> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_month/cnt_1_3> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_month/cnt_4> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_month/cnt_1_ren> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_month/cnt_3> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_month/cnt_2_ren> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_month/cnt_0> of sequential type is unconnected in block <display_driver>.
+WARNING:Xst:2677 - Node <counter/counter_month/cnt_2_FSM_FFd1> of sequential type is unconnected in block <display_driver>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <shift_reg/shift_temp_1> in Unit <display_driver> is equivalent to the following FF/Latch, which will be removed : <shift_reg/shift_temp_3> 
+INFO:Xst:2261 - The FF/Latch <shift_reg/shift_val_1> in Unit <display_driver> is equivalent to the following FF/Latch, which will be removed : <shift_reg/shift_val_3> 
+Found area constraint ratio of 100 (+ 5) on block display_driver, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 102
+ Flip-Flops                                            : 102
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : display_driver.ngr
+Top Level Output File Name         : display_driver
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 386
+#      GND                         : 1
+#      INV                         : 79
+#      LUT1                        : 4
+#      LUT2                        : 80
+#      LUT3                        : 10
+#      LUT3_L                      : 1
+#      LUT4                        : 48
+#      MUXCY                       : 79
+#      MUXF5                       : 7
+#      VCC                         : 1
+#      XORCY                       : 76
+# FlipFlops/Latches                : 102
+#      FDC                         : 28
+#      FDCE                        : 18
+#      FDCP                        : 32
+#      FDP                         : 21
+#      FDPE                        : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 2
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400ft256-5 
+
+ Number of Slices:                      120  out of   3584     3%  
+ Number of Slice Flip Flops:            102  out of   7168     1%  
+ Number of 4 input LUTs:                222  out of   7168     3%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    173     8%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                        | Load  |
+-----------------------------------+----------------------------------------------+-------+
+clk                                | BUFGP                                        | 40    |
+frequency_div/clk21                | BUFG                                         | 50    |
+frequency_div/clk1                 | NONE(display_mul/anode_0)                    | 4     |
+counter/counter_secs/DFF/q_o       | NONE(counter/counter_secs/mod6_counter/cnt_3)| 4     |
+counter/counter_mins/DFF/q_o       | NONE(counter/counter_mins/mod6_counter/cnt_3)| 4     |
+-----------------------------------+----------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------+-----------------------------------+-------+
+Control Signal                                                       | Buffer(FF name)                   | Load  |
+---------------------------------------------------------------------+-----------------------------------+-------+
+reset                                                                | IBUF                              | 70    |
+shift_reg/shift_val_0_and0000(shift_reg/shift_val_0_and00001:O)      | NONE(shift_reg/shift_temp_0)      | 2     |
+shift_reg/shift_val_0_and0001(shift_reg/shift_val_0_and00011:O)      | NONE(shift_reg/shift_temp_0)      | 2     |
+shift_reg/shift_val_10_and0000(shift_reg/shift_val_10_and00001:O)    | NONE(shift_reg/shift_temp_10)     | 2     |
+shift_reg/shift_val_10_and0001(shift_reg/shift_val_10_and00011:O)    | NONE(shift_reg/shift_temp_10)     | 2     |
+shift_reg/shift_val_11_and0000(shift_reg/shift_val_11_and00001:O)    | NONE(shift_reg/shift_temp_11)     | 2     |
+shift_reg/shift_val_11_and0001(shift_reg/shift_val_11_and00011:O)    | NONE(shift_reg/shift_temp_11)     | 2     |
+shift_reg/shift_val_1_and0000(shift_reg/shift_val_3_and00001:O)      | NONE(shift_reg/shift_temp_1)      | 2     |
+shift_reg/shift_val_1_and0001(shift_reg/shift_val_3_and00011:O)      | NONE(shift_reg/shift_temp_1)      | 2     |
+shift_reg/shift_val_2_and0000(shift_reg/shift_val_2_and00001:O)      | NONE(shift_reg/shift_temp_2)      | 2     |
+shift_reg/shift_val_2_and0001(shift_reg/shift_val_2_and00011:O)      | NONE(shift_reg/shift_temp_2)      | 2     |
+shift_reg/shift_val_4_and0000(shift_reg/shift_val_4_and00001:O)      | NONE(shift_reg/shift_temp_4)      | 2     |
+shift_reg/shift_val_4_and0001(shift_reg/shift_val_4_and00011:O)      | NONE(shift_reg/shift_temp_4)      | 2     |
+shift_reg/shift_val_5_and0000(shift_reg/shift_val_5_and00001:O)      | NONE(shift_reg/shift_temp_5)      | 2     |
+shift_reg/shift_val_5_and0001(shift_reg/shift_val_5_and00011:O)      | NONE(shift_reg/shift_temp_5)      | 2     |
+shift_reg/shift_val_6_and0000(shift_reg/shift_val_6_and00001:O)      | NONE(shift_reg/shift_temp_6)      | 2     |
+shift_reg/shift_val_6_and0001(shift_reg/shift_val_6_and00011:O)      | NONE(shift_reg/shift_temp_6)      | 2     |
+shift_reg/shift_val_7_and0000(shift_reg/shift_val_7_and00001:O)      | NONE(shift_reg/shift_temp_7)      | 2     |
+shift_reg/shift_val_7_and0001(shift_reg/shift_val_7_and00011:O)      | NONE(shift_reg/shift_temp_7)      | 2     |
+shift_reg/shift_val_8_and0000(shift_reg/shift_val_8_and00001:O)      | NONE(shift_reg/shift_temp_8)      | 2     |
+shift_reg/shift_val_8_and0001(shift_reg/shift_val_8_and00011:O)      | NONE(shift_reg/shift_temp_8)      | 2     |
+shift_reg/shift_val_9_and0000(shift_reg/shift_val_9_and00001:O)      | NONE(shift_reg/shift_temp_9)      | 2     |
+shift_reg/shift_val_9_and0001(shift_reg/shift_val_9_and00011:O)      | NONE(shift_reg/shift_temp_9)      | 2     |
+counter/counter_hr/cnt_0_and0000(counter/counter_hr/cnt_0_and00001:O)| NONE(counter/counter_hr/cnt_0)    | 1     |
+counter/counter_hr/cnt_0_and0001(counter/counter_hr/cnt_0_and00011:O)| NONE(counter/counter_hr/cnt_0)    | 1     |
+counter/counter_hr/cnt_1_and0000(counter/counter_hr/cnt_1_and00001:O)| NONE(counter/counter_hr/cnt_1_ren)| 1     |
+counter/counter_hr/cnt_1_and0001(counter/counter_hr/cnt_1_and00011:O)| NONE(counter/counter_hr/cnt_1_ren)| 1     |
+counter/counter_hr/cnt_2_and0000(counter/counter_hr/cnt_2_and00001:O)| NONE(counter/counter_hr/cnt_2_ren)| 1     |
+counter/counter_hr/cnt_2_and0001(counter/counter_hr/cnt_2_and00011:O)| NONE(counter/counter_hr/cnt_2_ren)| 1     |
+counter/counter_hr/cnt_3_and0000(counter/counter_hr/cnt_3_and00001:O)| NONE(counter/counter_hr/cnt_3)    | 1     |
+counter/counter_hr/cnt_3_and0001(counter/counter_hr/cnt_3_and00011:O)| NONE(counter/counter_hr/cnt_3)    | 1     |
+counter/counter_hr/cnt_4_and0000(counter/counter_hr/cnt_4_and00001:O)| NONE(counter/counter_hr/cnt_4)    | 1     |
+counter/counter_hr/cnt_4_and0001(counter/counter_hr/cnt_4_and00011:O)| NONE(counter/counter_hr/cnt_4)    | 1     |
+shift_reg/shift_val_12_and0000(shift_reg/shift_val_12_and00001:O)    | NONE(shift_reg/shift_val_12)      | 1     |
+shift_reg/shift_val_12_and0001(shift_reg/shift_val_12_and00011:O)    | NONE(shift_reg/shift_val_12)      | 1     |
+shift_reg/shift_val_13_and0000(shift_reg/shift_val_13_and00001:O)    | NONE(shift_reg/shift_val_13)      | 1     |
+shift_reg/shift_val_13_and0001(shift_reg/shift_val_13_and00011:O)    | NONE(shift_reg/shift_val_13)      | 1     |
+shift_reg/shift_val_14_and0000(shift_reg/shift_val_14_and00001:O)    | NONE(shift_reg/shift_val_14)      | 1     |
+shift_reg/shift_val_14_and0001(shift_reg/shift_val_14_and00011:O)    | NONE(shift_reg/shift_val_14)      | 1     |
+shift_reg/shift_val_15_and0000(shift_reg/shift_val_15_and00001:O)    | NONE(shift_reg/shift_val_15)      | 1     |
+shift_reg/shift_val_15_and0001(shift_reg/shift_val_15_and00011:O)    | NONE(shift_reg/shift_val_15)      | 1     |
+shift_reg/shift_val_24_and0000(shift_reg/shift_val_24_and00001:O)    | NONE(shift_reg/shift_temp_24)     | 1     |
+shift_reg/shift_val_24_and0001(shift_reg/shift_val_24_and00011:O)    | NONE(shift_reg/shift_temp_24)     | 1     |
+---------------------------------------------------------------------+-----------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.099ns (Maximum Frequency: 109.907MHz)
+   Minimum input arrival time before clock: 2.160ns
+   Maximum output required time after clock: 11.349ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.099ns (frequency: 109.907MHz)
+  Total number of paths / destination ports: 10922 / 42
+-------------------------------------------------------------------------
+Delay:               9.099ns (Levels of Logic = 29)
+  Source:            frequency_div/a2_0 (FF)
+  Destination:       frequency_div/a2_25 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: frequency_div/a2_0 to frequency_div/a2_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  frequency_div/a2_0 (frequency_div/a2_0)
+     LUT1:I0->O            1   0.479   0.000  frequency_div/Msub_clk2_addsub0000_cy<0>_rt (frequency_div/Msub_clk2_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.435   0.000  frequency_div/Msub_clk2_addsub0000_cy<0> (frequency_div/Msub_clk2_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<1> (frequency_div/Msub_clk2_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<2> (frequency_div/Msub_clk2_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<3> (frequency_div/Msub_clk2_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<4> (frequency_div/Msub_clk2_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<5> (frequency_div/Msub_clk2_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<6> (frequency_div/Msub_clk2_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<7> (frequency_div/Msub_clk2_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<8> (frequency_div/Msub_clk2_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<9> (frequency_div/Msub_clk2_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<10> (frequency_div/Msub_clk2_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<11> (frequency_div/Msub_clk2_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<12> (frequency_div/Msub_clk2_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<13> (frequency_div/Msub_clk2_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<14> (frequency_div/Msub_clk2_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<15> (frequency_div/Msub_clk2_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<16> (frequency_div/Msub_clk2_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/Msub_clk2_addsub0000_cy<17> (frequency_div/Msub_clk2_addsub0000_cy<17>)
+     XORCY:CI->O           1   0.786   0.976  frequency_div/Msub_clk2_addsub0000_xor<18> (frequency_div/clk2_addsub0000<18>)
+     LUT2:I0->O            1   0.479   0.000  frequency_div/clk2_cmp_eq0000_wg_lut<0> (frequency_div/clk2_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  frequency_div/clk2_cmp_eq0000_wg_cy<0> (frequency_div/clk2_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/clk2_cmp_eq0000_wg_cy<1> (frequency_div/clk2_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/clk2_cmp_eq0000_wg_cy<2> (frequency_div/clk2_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/clk2_cmp_eq0000_wg_cy<3> (frequency_div/clk2_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/clk2_cmp_eq0000_wg_cy<4> (frequency_div/clk2_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  frequency_div/clk2_cmp_eq0000_wg_cy<5> (frequency_div/clk2_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          27   0.246   1.721  frequency_div/clk2_cmp_eq0000_wg_cy<6> (frequency_div/clk2_cmp_eq0000)
+     LUT2:I1->O            1   0.479   0.000  frequency_div/Mcount_a2_eqn_91 (frequency_div/Mcount_a2_eqn_9)
+     FDC:D                     0.176          frequency_div/a2_9
+    ----------------------------------------
+    Total                      9.099ns (5.362ns logic, 3.737ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'frequency_div/clk21'
+  Clock period: 6.115ns (frequency: 163.528MHz)
+  Total number of paths / destination ports: 138 / 50
+-------------------------------------------------------------------------
+Delay:               6.115ns (Levels of Logic = 5)
+  Source:            counter/counter_mins/mod10_counter/cnt_3 (FF)
+  Destination:       counter/counter_hr/cnt_2_FSM_FFd1 (FF)
+  Source Clock:      frequency_div/clk21 rising
+  Destination Clock: frequency_div/clk21 rising
+
+  Data Path: counter/counter_mins/mod10_counter/cnt_3 to counter/counter_hr/cnt_2_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.626   1.078  counter/counter_mins/mod10_counter/cnt_3 (counter/counter_mins/mod10_counter/cnt_3)
+     LUT4:I0->O            2   0.479   1.040  counter/counter_mins/tc11 (counter/counter_mins/mod10_tc)
+     LUT4:I0->O            1   0.479   0.000  counter/counter_mins/tc1 (counter/counter_mins/tc)
+     MUXF5:I0->O           5   0.314   0.842  counter/counter_mins/tc_f5 (counter/tc_min)
+     LUT3_L:I2->LO         1   0.479   0.123  counter/counter_hr/cnt_2_FSM_FFd1-In_SW0 (N8)
+     LUT4:I3->O            1   0.479   0.000  counter/counter_hr/cnt_2_FSM_FFd1-In (counter/counter_hr/cnt_2_FSM_FFd1-In)
+     FDC:D                     0.176          counter/counter_hr/cnt_2_FSM_FFd1
+    ----------------------------------------
+    Total                      6.115ns (3.032ns logic, 3.083ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'frequency_div/clk1'
+  Clock period: 1.766ns (frequency: 566.283MHz)
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               1.766ns (Levels of Logic = 0)
+  Source:            display_mul/anode_2 (FF)
+  Destination:       display_mul/anode_1 (FF)
+  Source Clock:      frequency_div/clk1 rising
+  Destination Clock: frequency_div/clk1 rising
+
+  Data Path: display_mul/anode_2 to display_mul/anode_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             10   0.626   0.964  display_mul/anode_2 (display_mul/anode_2)
+     FDP:D                     0.176          display_mul/anode_1
+    ----------------------------------------
+    Total                      1.766ns (0.802ns logic, 0.964ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'counter/counter_secs/DFF/q_o'
+  Clock period: 2.882ns (frequency: 346.933MHz)
+  Total number of paths / destination ports: 13 / 4
+-------------------------------------------------------------------------
+Delay:               2.882ns (Levels of Logic = 1)
+  Source:            counter/counter_secs/mod6_counter/cnt_0 (FF)
+  Destination:       counter/counter_secs/mod6_counter/cnt_0 (FF)
+  Source Clock:      counter/counter_secs/DFF/q_o rising
+  Destination Clock: counter/counter_secs/DFF/q_o rising
+
+  Data Path: counter/counter_secs/mod6_counter/cnt_0 to counter/counter_secs/mod6_counter/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.626   0.921  counter/counter_secs/mod6_counter/cnt_0 (counter/counter_secs/mod6_counter/cnt_0)
+     INV:I->O              1   0.479   0.681  counter/counter_secs/mod6_counter/Mcount_cnt_xor<0>11_INV_0 (counter/counter_secs/mod6_counter/Mcount_cnt)
+     FDCE:D                    0.176          counter/counter_secs/mod6_counter/cnt_0
+    ----------------------------------------
+    Total                      2.882ns (1.281ns logic, 1.601ns route)
+                                       (44.4% logic, 55.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'counter/counter_mins/DFF/q_o'
+  Clock period: 2.745ns (frequency: 364.339MHz)
+  Total number of paths / destination ports: 13 / 4
+-------------------------------------------------------------------------
+Delay:               2.745ns (Levels of Logic = 1)
+  Source:            counter/counter_mins/mod6_counter/cnt_0 (FF)
+  Destination:       counter/counter_mins/mod6_counter/cnt_0 (FF)
+  Source Clock:      counter/counter_mins/DFF/q_o rising
+  Destination Clock: counter/counter_mins/DFF/q_o rising
+
+  Data Path: counter/counter_mins/mod6_counter/cnt_0 to counter/counter_mins/mod6_counter/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.626   0.783  counter/counter_mins/mod6_counter/cnt_0 (counter/counter_mins/mod6_counter/cnt_0)
+     INV:I->O              1   0.479   0.681  counter/counter_mins/mod6_counter/Mcount_cnt_xor<0>11_INV_0 (counter/counter_mins/mod6_counter/Mcount_cnt)
+     FDCE:D                    0.176          counter/counter_mins/mod6_counter/cnt_0
+    ----------------------------------------
+    Total                      2.745ns (1.281ns logic, 1.464ns route)
+                                       (46.7% logic, 53.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'counter/counter_secs/DFF/q_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.160ns (Levels of Logic = 1)
+  Source:            ce (PAD)
+  Destination:       counter/counter_secs/mod6_counter/cnt_3 (FF)
+  Destination Clock: counter/counter_secs/DFF/q_o rising
+
+  Data Path: ce to counter/counter_secs/mod6_counter/cnt_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.715   0.921  ce_IBUF (ce_IBUF)
+     FDCE:CE                   0.524          counter/counter_secs/mod6_counter/cnt_0
+    ----------------------------------------
+    Total                      2.160ns (1.239ns logic, 0.921ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'frequency_div/clk21'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.160ns (Levels of Logic = 1)
+  Source:            ce (PAD)
+  Destination:       counter/counter_secs/mod10_counter/cnt_3 (FF)
+  Destination Clock: frequency_div/clk21 rising
+
+  Data Path: ce to counter/counter_secs/mod10_counter/cnt_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.715   0.921  ce_IBUF (ce_IBUF)
+     FDCE:CE                   0.524          counter/counter_secs/mod10_counter/cnt_0
+    ----------------------------------------
+    Total                      2.160ns (1.239ns logic, 0.921ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'frequency_div/clk1'
+  Total number of paths / destination ports: 256 / 11
+-------------------------------------------------------------------------
+Offset:              11.349ns (Levels of Logic = 5)
+  Source:            display_mul/anode_0 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      frequency_div/clk1 rising
+
+  Data Path: display_mul/anode_0 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.626   1.201  display_mul/anode_0 (display_mul/anode_0)
+     LUT2:I0->O            8   0.479   0.980  display_mul/dispLED_mux0000<3>17 (display_mul/dispLED_mux0000<0>17)
+     LUT3:I2->O            1   0.479   0.000  display_mul/dispLED_mux0000<3>56_F (N21)
+     MUXF5:I0->O           7   0.314   1.201  display_mul/dispLED_mux0000<3>56 (display_mul/dispLED_mux0000<3>)
+     LUT4:I0->O            1   0.479   0.681  display_mul/Mrom_seg21 (seg_2_OBUF)
+     OBUF:I->O                 4.909          seg_2_OBUF (seg<2>)
+    ----------------------------------------
+    Total                     11.349ns (7.286ns logic, 4.063ns route)
+                                       (64.2% logic, 35.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'frequency_div/clk21'
+  Total number of paths / destination ports: 112 / 7
+-------------------------------------------------------------------------
+Offset:              10.787ns (Levels of Logic = 5)
+  Source:            shift_reg/shift_val_1 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      frequency_div/clk21 rising
+
+  Data Path: shift_reg/shift_val_1 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCP:C->Q             2   0.626   0.768  shift_reg/shift_val_1 (shift_reg/shift_val_1)
+     LUT4:I3->O            1   0.479   0.851  display_mul/dispLED_mux0000<1>43 (display_mul/dispLED_mux0000<1>43)
+     LUT4:I1->O            1   0.479   0.000  display_mul/dispLED_mux0000<1>56_G (N26)
+     MUXF5:I1->O           7   0.314   1.201  display_mul/dispLED_mux0000<1>56 (display_mul/dispLED_mux0000<1>)
+     LUT4:I0->O            1   0.479   0.681  display_mul/Mrom_seg61 (seg_6_OBUF)
+     OBUF:I->O                 4.909          seg_6_OBUF (seg<6>)
+    ----------------------------------------
+    Total                     10.787ns (7.286ns logic, 3.501ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.95 secs
+ 
+--> 
+
+Total memory usage is 4507372 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   76 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

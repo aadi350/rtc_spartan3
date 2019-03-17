@@ -1,0 +1,122 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK1: 1=clk.p
+GSET: 2=reset.p
+GRST: 2=reset.p
+----------------- B l o c k 0 ------------------
+PLApt(15/56), Fanin(14/38), Clk(1/3), Bct(1/4), Pin(2/6), Mcell(16/16)
+PLApts[15/41] 36 64 37 31 8 33 34 35 () () () () () () () () 26 () () () () () 65 () () () () () 32 () () 30 () () 29 () () 28 () () 25
+Fanins[14] clk_1s.n frequency_div/a1<0>.n frequency_div/a1<10>.n frequency_div/a1<11>.n frequency_div/a1<1>.n frequency_div/a1<2>.n frequency_div/a1<3>.n frequency_div/a1<4>.n frequency_div/a1<5>.n frequency_div/a1<6>.n frequency_div/a1<7>.n frequency_div/a1<8>.n frequency_div/a1<9>.n frequency_div/a3<0>.n
+clk[1] clk 
+CTC: (pt=8) clk_1s ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[18] [reset(143)] [mod60_counter/mod60_out<0>,ce(142)] [frequency_div/a1<0>(160)]  
+           [frequency_div/a3<0>(159)] [frequency_div/a1<1>(155)] [frequency_div/a1<2>(154)]  
+           [frequency_div/a1<3>(153)] [frequency_div/a1<4>(152)] [frequency_div/a1<6>(151)] [clk_1kHz(149)]  
+           [frequency_div/a1<10>(146)] [frequency_div/a1<11>(145)] [frequency_div/a1<5>(158)]  
+           [frequency_div/a1<7>(157)] [frequency_div/a1<8>(156)] [frequency_div/a1<9>(150)]  
+           [frequency_div/a3<1>(147)] 
+Signal[18] [ 0: frequency_div/a1<11>(145)  ][ 1: frequency_div/a1<10>(146)  ][ 2: frequency_div/a3<1>(147)  
+           reset(143)  ][ 3: mod60_counter/mod60_out<0>(148) ce(142)  ][ 4: clk_1kHz(149)  ][ 5:  
+           frequency_div/a1<9>(150) (140)  ][ 6: frequency_div/a1<6>(151)  ][ 7: frequency_div/a1<4>(152)  ] 
+           [ 8: frequency_div/a1<3>(153)  ][ 9: frequency_div/a1<2>(154)  ][ 10: frequency_div/a1<1>(155)  ] 
+           [ 11: frequency_div/a1<8>(156) (139)  ][ 12: frequency_div/a1<7>(157) (138)  ][ 13:  
+           frequency_div/a1<5>(158) (137)  ][ 14: frequency_div/a3<0>(159)  ][ 15: frequency_div/a1<0>(160)  
+            ]
+----------------- B l o c k 1 ------------------
+PLApt(17/56), Fanin(28/38), Clk(1/3), Bct(0/4), Pin(0/8), Mcell(16/16)
+PLApts[17/47] 46 66 47 48 53 54 55 58 61 62 52 63 () () () () 56 () () 57 () () 59 () () () () () () () () () () () () () () () () () () () () 60 () () 67
+Fanins[28] frequency_div/a3<0>.n frequency_div/a3<10>.n frequency_div/a3<11>.n frequency_div/a3<12>.n frequency_div/a3<13>.n frequency_div/a3<14>.n frequency_div/a3<15>.n frequency_div/a3<16>.n frequency_div/a3<17>.n frequency_div/a3<18>.n frequency_div/a3<19>.n frequency_div/a3<1>.n frequency_div/a3<20>.n frequency_div/a3<21>.n frequency_div/a3<22>.n frequency_div/a3<23>.n frequency_div/a3<24>.n frequency_div/a3<25>.n frequency_div/a3<26>.n frequency_div/a3<27>.n frequency_div/a3<2>.n frequency_div/a3<3>.n frequency_div/a3<4>.n frequency_div/a3<5>.n frequency_div/a3<6>.n frequency_div/a3<7>.n frequency_div/a3<8>.n frequency_div/a3<9>.n
+clk[1] clk 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [frequency_div/a3<10>(176)] [frequency_div/a3<11>(171)] [frequency_div/a3<12>(170)]  
+           [frequency_div/a3<17>(169)] [frequency_div/a3<18>(168)] [frequency_div/a3<19>(167)]  
+           [frequency_div/a3<22>(166)] [frequency_div/a3<25>(162)] [frequency_div/a3<26>(175)]  
+           [frequency_div/a3<27>(174)] [clk_1s(173)] [frequency_div/a3<24>(172)] [frequency_div/a3<23>(165)]  
+           [frequency_div/a3<21>(164)] [frequency_div/a3<20>(163)] [frequency_div/a3<16>(161)] 
+Signal[16] [ 0: frequency_div/a3<16>(161) (2)  ][ 1: frequency_div/a3<25>(162)  ][ 2:  
+           frequency_div/a3<20>(163) (3)  ][ 3: frequency_div/a3<21>(164) (4)  ][ 4:  
+           frequency_div/a3<23>(165) (5)  ][ 5: frequency_div/a3<22>(166)  ][ 6: frequency_div/a3<19>(167)  ] 
+           [ 7: frequency_div/a3<18>(168)  ][ 8: frequency_div/a3<17>(169)  ][ 9: frequency_div/a3<12>(170)  
+            ][ 10: frequency_div/a3<11>(171)  ][ 11: frequency_div/a3<24>(172) (6)  ][ 12: clk_1s(173) (7)  ] 
+           [ 13: frequency_div/a3<27>(174) (9)  ][ 14: frequency_div/a3<26>(175) (10)  ][ 15:  
+           frequency_div/a3<10>(176)  ]
+----------------- B l o c k 2 ------------------
+PLApt(18/56), Fanin(22/38), Clk(1/3), Bct(1/4), Pin(4/6), Mcell(16/16)
+PLApts[18/56] 3 () () () 9 () () () () () 4 () () 5 () () 6 () () 50 () () 7 () () 49 () () 45 () () 44 () () 43 () () 42 () () 41 () () 40 () () 39 () () 27 () () 38 () () 51
+Fanins[22] anode<0>.n anode<1>.n anode<2>.n anode<3>.n clk_1kHz.n frequency_div/a3<0>.n frequency_div/a3<10>.n frequency_div/a3<11>.n frequency_div/a3<12>.n frequency_div/a3<13>.n frequency_div/a3<14>.n frequency_div/a3<1>.n frequency_div/a3<2>.n frequency_div/a3<3>.n frequency_div/a3<4>.n frequency_div/a3<5>.n frequency_div/a3<6>.n frequency_div/a3<7>.n frequency_div/a3<8>.n frequency_div/a3<9>.n mod60_counter/mod6_clk.n ce.p
+clk[1] clk 
+CTC: (pt=9) clk_1kHz ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [anode<0>(177),anode<0>(136)] [anode<1>(178),anode<1>(135)] [anode<2>(179),anode<2>(134)]  
+           [anode<3>(181),anode<3>(133)] [frequency_div/a3<2>(191)] [frequency_div/a3<3>(189)]  
+           [frequency_div/a3<4>(188)] [frequency_div/a3<5>(187)] [frequency_div/a3<6>(186)]  
+           [frequency_div/a3<7>(185)] [frequency_div/a3<8>(184)] [frequency_div/a3<9>(183)]  
+           [frequency_div/a3<13>(182)] [frequency_div/a3<14>(180)] [frequency_div/a3<15>(192)]  
+           [mod60_counter/mod60_out<4>(190)] 
+Signal[16] [ 0: anode<0>(177) anode<0>(136)  ][ 1: anode<1>(178) anode<1>(135)  ][ 2: anode<2>(179)  
+           anode<2>(134)  ][ 3: frequency_div/a3<14>(180)  ][ 4: anode<3>(181) anode<3>(133)  ][ 5:  
+           frequency_div/a3<13>(182)  ][ 6: frequency_div/a3<9>(183)  ][ 7: frequency_div/a3<8>(184)  ][ 8:  
+           frequency_div/a3<7>(185)  ][ 9: frequency_div/a3<6>(186)  ][ 10: frequency_div/a3<5>(187)  ][ 11:  
+           frequency_div/a3<4>(188)  ][ 12: frequency_div/a3<3>(189)  ][ 13: mod60_counter/mod60_out<4>(190)  
+           (132)  ][ 14: frequency_div/a3<2>(191)  ][ 15: frequency_div/a3<15>(192) (131)  ]
+----------------- B l o c k 3 ------------------
+PLApt(15/56), Fanin(11/38), Clk(0/3), Bct(1/4), Pin(8/8), Mcell(15/16)
+PLApts[15/56] 19 14 15 22 8 17 21 16 () () 24 () () () () () () () () () () () () () () () () () () () () 12 () () 27 () () 27 () () 27 () () () () () () () () () () () 10 () () 18
+Fanins[11] clk_1s.n mod60_counter/mod60_out<0>.n mod60_counter/mod60_out<1>.n mod60_counter/mod60_out<2>.n mod60_counter/mod60_out<3>.n mod60_counter/mod60_out<4>.n mod60_counter/mod60_out<5>.n mod60_counter/mod60_out<6>.n mod60_counter/mod60_out<7>.n mod60_counter/mod6_clk.n ce.p
+clk[0] 
+CTC: (pt=8) clk_1s ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[15] [seg<0>(196),seg<0>(14)] [seg<1>(197),seg<1>(15)] [seg<2>(198),seg<2>(16)]  
+           [seg<3>(204),seg<3>(17)] [seg<4>(206),seg<4>(18)] [seg<6>(194),seg<6>(12)]  
+           [seg<7>(195),seg<7>(13)] [tc(193),tc(11)] [mod60_counter/mod6_clk(208)]  
+           [mod60_counter/mod60_out<1>(207)] [mod60_counter/mod60_out<3>(205)]  
+           [mod60_counter/mod60_out<6>(203)] [mod60_counter/mod60_out<5>(202)]  
+           [mod60_counter/mod60_out<7>(201)] [mod60_counter/mod60_out<2>(200)] 
+Signal[15] [ 0: tc(193) tc(11)  ][ 1: seg<6>(194) seg<6>(12)  ][ 2: seg<7>(195) seg<7>(13)  ][ 3:  
+           seg<0>(196) seg<0>(14)  ][ 4: seg<1>(197) seg<1>(15)  ][ 5: seg<2>(198) seg<2>(16)  ][ 6:  ][ 7:  
+           mod60_counter/mod60_out<2>(200)  ][ 8: mod60_counter/mod60_out<7>(201)  ][ 9:  
+           mod60_counter/mod60_out<5>(202)  ][ 10: mod60_counter/mod60_out<6>(203)  ][ 11: seg<3>(204)  
+           seg<3>(17)  ][ 12: mod60_counter/mod60_out<3>(205)  ][ 13: seg<4>(206) seg<4>(18)  ][ 14:  
+           mod60_counter/mod60_out<1>(207)  ][ 15: mod60_counter/mod6_clk(208)  ]
+----------------- B l o c k 4 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(2/5), Mcell(1/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [seg<5>(210),seg<5>(33)] [clk(32)] 
+Signal[ 2] [ 0:  ][ 1: seg<5>(210) seg<5>(33)  ][ 2:  ][ 3: clk(32)  ][ 4: (31)  ][ 5: (30)  ][ 6:  ][ 7:  ] 
+           [ 8:  ][ 9:  ][ 10:  ][ 11:  ][ 12:  ][ 13: (28)  ][ 14:  ][ 15:  ]
+----------------- B l o c k 5 ------------------
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+----------------- B l o c k 11 ------------------
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------
